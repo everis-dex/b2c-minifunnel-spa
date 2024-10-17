@@ -13,6 +13,7 @@ $totalTurquoise: #54b9ad;
 $totalTurquiseBackground: rgba(84, 185, 173, 0.7);
 $gradient-luz: linear-gradient(90deg, #00c8ff 5.33%, #0082ff 92.33%);
 $gradient-gas: linear-gradient(90deg, #009cea 5.33%, #4632ff 92.33%);
+$gradient-green: linear-gradient(180deg, #40A900 0%, #00884A 100%);
 $total-luz: #009bff;
 $total-gas: #4632ff;
 $totalTogglebar: #7098a7;
@@ -22,22 +23,26 @@ $totalblue: #285aff;
 $consumocard: #4b7d91;
 $cuotaFijacard: #788083;
 $totalceleste: #40bfff;
+$neutral-grey: #5D6364;
 
 // class color
 .blue-text {
 	-webkit-text-fill-color: transparent;
 	background: $gradient-gas;
 	-webkit-background-clip: text;
+	background-clip: text;
 }
 .gradient-gas-text {
 	-webkit-text-fill-color: transparent;
 	background: $gradient-gas;
 	-webkit-background-clip: text;
+	background-clip: text;
 }
 .gradient-luz-text {
 	-webkit-text-fill-color: transparent;
 	background: $gradient-luz;
 	-webkit-background-clip: text;
+	background-clip: text;
 }
 .background-gas {
 	background: rgb(0, 156, 234);
