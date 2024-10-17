@@ -1,0 +1,79 @@
+
+// VARIABLE FUNNEL ACTUAL
+
+//Colors
+$color-text-total: #374649;
+$color-white: #ffff;
+$totalred: #ed0000;
+$totalred-mandatory: #df0c36;
+$totalgreen: #b7cbd3;
+$buttoncolor: $totalred;
+$background-grey-color: #f7f9fa;
+$totalTurquoise: #54b9ad;
+$totalTurquiseBackground: rgba(84, 185, 173, 0.7);
+$gradient-luz: linear-gradient(90deg, #00c8ff 5.33%, #0082ff 92.33%);
+$gradient-gas: linear-gradient(90deg, #009cea 5.33%, #4632ff 92.33%);
+$total-luz: #009bff;
+$total-gas: #4632ff;
+$totalTogglebar: #7098a7;
+$input-color: rgb(212, 224, 228);
+$total-label: #999;
+$totalblue: #285aff;
+$consumocard: #4b7d91;
+$cuotaFijacard: #788083;
+$totalceleste: #40bfff;
+
+// class color
+.blue-text {
+	-webkit-text-fill-color: transparent;
+	background: $gradient-gas;
+	-webkit-background-clip: text;
+}
+.gradient-gas-text {
+	-webkit-text-fill-color: transparent;
+	background: $gradient-gas;
+	-webkit-background-clip: text;
+}
+.gradient-luz-text {
+	-webkit-text-fill-color: transparent;
+	background: $gradient-luz;
+	-webkit-background-clip: text;
+}
+.background-gas {
+	background: rgb(0, 156, 234);
+	background: linear-gradient(90deg, rgba(0, 156, 234, 1) 5.33%, rgba(70, 50, 255, 1) 100%);
+	color: $color-white;
+}
+.background-luz {
+	background: rgb(0, 200, 255);
+	background: linear-gradient(90deg, rgba(0, 200, 255, 1) 5.33%, rgba(0, 130, 255, 1) 100%);
+	color: $color-white;
+}
+.container {
+	text-align: center;
+}
+
+$extra-small: 400px;
+$small: 586px;
+$medium: 900px;
+$medium-large: 1200px;
+$large-medium: 1366px;
+$extra-large: 1528px;
+
+:root {
+	--buttoncolor: #ed0000;
+}
+
+//fonts size
+$normal: 11px;
+
+$border-radius-card: 13px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
