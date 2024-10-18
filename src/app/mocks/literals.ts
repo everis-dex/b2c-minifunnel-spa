@@ -1,4 +1,4 @@
-const literals = {
+export const literals = {
     "header": {
         "phoneButton": "Teléfono contrataciones" 
     },

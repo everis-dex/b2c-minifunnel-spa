@@ -1,0 +1,43 @@
+<mat-card>
+    <!-- TITLE -->
+        <mat-card-title-group class="title-group">
+            @if (status === stepStatus.Done) {
+                <div class="title-group--circle-check">
+                    <img class="title-group--circle-check--icon" src="assets/icons/check.svg" alt="Paso completado" aria-label="Paso completado"/>
+                </div>
+            } @else {
+                <div class="title-group--circle-wip">
+                    <div class="title-group--number">{{ stepNumber }}</div>
+                </div>
+            }
+            <h2
+                [ngClass]="
+                    status === stepStatus.Done ? 'title-group--title--complete' : 'title-group--title--in-progress'">
+                    {{ title }}
+            </h2>
+        </mat-card-title-group>
+        <!-- FORM CONTENT -->
+        @if (status === stepStatus.InProgress) { 
+            <div class="step-content">
+                <mat-card-content>
+                <ng-content></ng-content>
+                </mat-card-content>
+            </div>
+        }
+        <!-- EDIT BUTTON -->
+        @if (status === stepStatus.Done) { 
+            <div class="step-content">
+                <button
+                    class="edit-button"
+                    tabindex="0"
+                    type="button"
+                    (click)="editStep()"
+                        >
+                        <img src="assets/icons/ico-arrow-dropdown.svg" 
+                        alt="" aria-hidden="true"/>
+                        Modificar
+                </button>
+            </div>
+
+        }
+</mat-card>

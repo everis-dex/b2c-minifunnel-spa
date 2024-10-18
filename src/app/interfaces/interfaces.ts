@@ -117,11 +117,11 @@ export interface FormData {
   check6: boolean;
   checkAltaDatadis: boolean;
   checkVisDatSumi: boolean;
-  descuentoAplicado: any;
-  digitalProductSelected: any;
-  productSelected: any;
-  productGasSelected: any;
-  facilitaSelected?: any;
+  // descuentoAplicado: any;
+  // digitalProductSelected: any;
+  // productSelected: any;
+  // productGasSelected: any;
+  // facilitaSelected?: any;
   facilitaPRD?: CPQProduct;
 }
 export interface ContratosPotenciales {
@@ -154,7 +154,7 @@ export interface ContratosPotenciales {
   CostChangeDH?: string;
   Partner?: string;
   Partner_present?: string;
-  Partner_fields: any;
+  // Partner_fields: any;
   Alta_directa?: AltaDirecta;
   Suministro_existente?: string;
   cupsLuz?: string;
@@ -167,12 +167,12 @@ export interface ContratosPotenciales {
   productGasDualSelected?: CPQProduct;
   productDigital?: CPQProduct;
 
-  allOffer?: any;
-  allCups?: any;
-  allPartner?: any;
-  allAltaDirecta?: any;
-  allSubmission?:any;
-  allLead?:any;
+  // allOffer?: any;
+  // allCups?: any;
+  // allPartner?: any;
+  // allAltaDirecta?: any;
+  // allSubmission?:any;
+  // allLead?:any;
   AdmissionTypeLight__c?:string;
   checkedOwner?: boolean;
 }
@@ -244,7 +244,7 @@ export interface C2C {
   recaptcha?: string;
   Flow?: string;
   Partner: string;
-  Partner_fields?: Array<any>;
+  // Partner_fields?: Array<any>;
   ScanID?: string;
   Privacy?: string;
   IdOferta?: string;
@@ -254,7 +254,7 @@ export interface C2C {
   Asunto?: string;
   Legal_text?: string;
   is_client?: boolean;
-  lead?: any;
+  // lead?: any;
 }
 
 export interface AltaDirecta {
@@ -364,7 +364,7 @@ export interface Price {
 }
 export interface Lead {
   Message?: string;
-  SF?: any;
+  // SF?: any;
 }
 
 export interface partnerFlow {
