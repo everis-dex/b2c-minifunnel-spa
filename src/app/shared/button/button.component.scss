@@ -1,24 +1,29 @@
 @import "../../../styles/variables.scss";
 
 button {
-  border: 1px var(--buttoncolor) solid;
-  padding: 15px 40px;
-  min-width: 175px;
-  min-height: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 23px;
-  text-align: center;
-  margin-bottom: 8px;
+  display: flex;
+  height: 48px;
+  padding: 12px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+  border-radius: 80px;
+  background: var($totalred, #ED0000);
+  color: var($color-white, #FFF);
+
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
 }
 
 .primary {
   border: 1px $buttoncolor solid;
   background-color: $buttoncolor;
   color: $color-white;
-  border-radius: 26.5px;
-  height: 53px;
   width: 213px;
   &:hover {
     background-color: $color-white;
@@ -28,10 +33,8 @@ button {
 
 .secundary {
   border: 1px solid $totalred;
-  border-radius: 26.5px;
   background-color: $color-white;
   color: $totalred;
-  height: 53px;
   width: 213px;
   &:hover {
     background-color: $buttoncolor;
@@ -39,38 +42,34 @@ button {
   }
 }
 
-
-:root {
-  --buttoncolor: #47922c;
-}
-
-.buttonRates {
-  border: 1px var(--buttoncolor) solid;
-  background-color: var(--buttoncolor);
-  color: $color-white;
-  border-radius: 26.5px;
-  height: 53px;
-  width: 213px;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
 @media (max-width: $medium) {
   button {
-    border-radius: 50px;
-    justify-content: space-around;
-    min-width: 124px;
-    min-height: 40px;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    display: flex;
+    height: 48px;
+    padding: 12px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+    border-radius: var(80px);
+    background: var($totalred, #ED0000);
+    color: var($color-white, #FFF);
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
   }
 }
 
 @media (max-width: $small) {
- .back {
+ .primary {
     width: -moz-fit-content;
   }
-  .next {
+  .secundary {
     width: -moz-fit-content;
   }
 }
