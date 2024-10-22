@@ -14,8 +14,8 @@ export class MainContainerComponent {
 
   stepStatus = StepStatus;
 
-  nextClicked(data: boolean) {
-    console.log(data);
+  nextClicked() {
+    console.log('El botón fue pulsado');
 	}
 
 }
