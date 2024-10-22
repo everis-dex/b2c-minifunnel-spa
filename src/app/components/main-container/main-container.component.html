@@ -1,1 +1,4 @@
 <p>main-container works!</p>
+
+<!-- <app-select selectId="nombre" (dataEmitter)="receiveData($event)" labelText="Nombre*"></app-select> -->
+<app-select [selectId]="'mi-select'" [selectOptions]="options" [labelText]="'Selecciona una opción'" (selectedOption)="onSelectChange($event)"></app-select>
