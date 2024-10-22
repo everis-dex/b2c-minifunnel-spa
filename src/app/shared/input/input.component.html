@@ -1,0 +1,2 @@
+<label [attr.for]="inputName">{{ labelText }}</label>
+<input matInput type="text" [id]="inputId" aria-label="Campo para ingresar su nombre" (input)="sendData($event)" [formControlName]="inputId" [required]="inputRequired">
