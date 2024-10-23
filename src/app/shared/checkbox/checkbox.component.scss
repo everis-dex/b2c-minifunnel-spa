@@ -19,3 +19,14 @@ mat-checkbox {
     line-height: 14px;
     letter-spacing: 0.1px;
 }
+
+@media (max-width: $small) {
+    mat-checkbox {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+
+        width: 44px;
+        height: 44px;
+    }
+}
