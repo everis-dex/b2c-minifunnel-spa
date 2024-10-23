@@ -2,7 +2,7 @@
     <label [attr.for]="inputName">{{ labelText }}</label>
     <div class="input-container">
         @if (inputIcon) {
-            <i class="icon--mail"></i>
+            <img class="input_icon" src="assets/icons/phone.svg" alt="Paso completado" aria-label="Paso completado"/>
         }
         <input matInput type="text" [class]="inputIconName"  [id]="inputId" aria-label="Campo para ingresar su nombre" (input)="sendData($event)" [formControlName]="inputId" [required]="inputRequired">
       </div>

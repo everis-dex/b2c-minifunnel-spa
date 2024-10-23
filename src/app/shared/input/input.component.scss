@@ -8,23 +8,6 @@
     gap: 4px;
     flex: 1 0 0;
 
-    i {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        .icon {
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            &--mail {
-                width: 32px;
-                height: 32px;
-                background-image: url('../../../assets/icons/mail.svg');
-            }
-        }
-    }
-      
     label {
         display: flex;
         flex-direction: column;
@@ -44,6 +27,14 @@
         gap: 8px;
     }
 
+    
+    .input_icon {
+        position: absolute;
+        left: 10px;
+        top: 57%;
+        transform: translateY(-50%);
+    }
+
     input {
         display: flex;
         padding: 12px 8px;
@@ -55,5 +46,23 @@
         align-items: center;
         gap: 8px;
         flex: 1 0 0;
+    }
+}
+
+
+@media (max-width: $small) {
+    .input_field {
+        gap: 4px;
+        align-self: stretch;
+        label {
+            align-self: stretch;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+        input {
+            width: 250px;
+            height: 24px;
+        }
     }
 }
