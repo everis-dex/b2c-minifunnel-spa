@@ -4,12 +4,15 @@
 </mat-select> -->
 
 <mat-form-field appearance="outline">
-  <!-- <mat-label>{{ labelText }}</mat-label> -->
-  <label [attr.for]="selectId">{{ labelText }}</label>
-
-  <mat-select [id]="selectId" (selectionChange)="selectOption($event.value)">
-    <mat-option *ngFor="let option of selectOptions" [value]="option.value">
-      {{ option.label }}
-    </mat-option>
-  </mat-select>
+  <div class="select-container">
+    
+    <!-- <mat-label>{{ labelText }}</mat-label> -->
+    <label [attr.for]="selectId">{{ labelText }}</label>
+    
+    <mat-select [id]="selectId" (selectionChange)="selectOption($event.value)" [formControlName]="selectId">
+      <mat-option *ngFor="let option of selectOptions" [value]="option.value">
+        {{ option.label }}
+      </mat-option>
+    </mat-select>
+  </div>
 </mat-form-field>
