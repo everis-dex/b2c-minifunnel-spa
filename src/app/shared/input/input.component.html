@@ -1,2 +1,9 @@
-<label [attr.for]="inputName">{{ labelText }}</label>
-<input matInput type="text" [id]="inputId" aria-label="Campo para ingresar su nombre" (input)="sendData($event)" [formControlName]="inputId" [required]="inputRequired">
+<div class="input_field">
+    <label [attr.for]="inputName">{{ labelText }}</label>
+    <div class="input-container">
+        @if (inputIcon) {
+            <i class="icon--mail"></i>
+        }
+        <input matInput type="text" [class]="inputIconName"  [id]="inputId" aria-label="Campo para ingresar su nombre" (input)="sendData($event)" [formControlName]="inputId" [required]="inputRequired">
+      </div>
+</div>

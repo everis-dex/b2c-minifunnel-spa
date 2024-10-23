@@ -1,19 +1,59 @@
 @import "../../../styles/variables.scss";
 
-label {
+.input_field {
     display: flex;
     flex-direction: column;
+    width: 308px;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 4px;
     flex: 1 0 0;
 
-    color: var($neutral-grey, #374649);
-    font-feature-settings: 'liga' off, 'clig' off;
+    i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        .icon {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            &--mail {
+                width: 32px;
+                height: 32px;
+                background-image: url('../../../assets/icons/mail.svg');
+            }
+        }
+    }
+      
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        flex: 1 0 0;
 
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25rem;
-    letter-spacing: 0.000625rem;
+        color: var($neutral-grey, #374649);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.000625rem;
+        gap: 8px;
+    }
+
+    input {
+        display: flex;
+        padding: 12px 8px;
+        justify-content: flex-end;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var($neutral-grey, #5D6364);
+        height: 20px;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+    }
 }

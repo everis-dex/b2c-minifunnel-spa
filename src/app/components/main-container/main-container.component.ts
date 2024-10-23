@@ -15,6 +15,7 @@ export class MainContainerComponent {
 
   stepStatus = StepStatus;
   isRequired: boolean = true; // Estado inicial
+  icon: boolean = true; // Estado inicial
 
   receiveData(data: string) {
     console.log(data);

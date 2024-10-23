@@ -19,6 +19,9 @@ export class InputComponent implements OnInit {
   @Input() inputData: string = '';
   @Input() inputType: string = 'default'; // default or empty
   @Input() inputRequired: boolean = false;
+
+  @Input() inputIcon: boolean = false;
+  @Input() inputIconName: string = '';
   
   @Input() labelText: string = '';
 
