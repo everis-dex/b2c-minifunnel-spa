@@ -1,5 +1,5 @@
-<div class="radio">
-    <input class="radio2" type="radio" [id]="radiobuttonId" [name]="radiobuttonId" [value]="radiobuttonText">
-    <img class="radio_icosn" src="assets/icons/iconLuz.svg" alt="" aria-label=""/>
+<div class="radio-container">
+    <input class="radio_button" type="radio" [id]="radiobuttonId" [name]="radiobuttonId" [value]="radiobuttonText">
+    <img class="radio_icon" [src]="radiobuttonIconRoute" alt=""/>
     <label [attr.for]="radiobuttonId">{{ radiobuttonText }}</label>
 </div>

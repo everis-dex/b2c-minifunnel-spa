@@ -1,6 +1,6 @@
 @import "../../../styles/variables.scss";
 
-.radio {
+.radio-container {
     display: flex;
     width: 120px;
     height: 20px;
@@ -13,10 +13,15 @@
     border-radius: 12px;
     border: 1px solid var(--neutral-gray-300, #A8ADAE);
     background: var(--primary-white, #FFF);
-    .radio2{
+
+    .radio_button{
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .radio_icon {
+        padding-left: 10px;
     }
 
     .mdc-label {

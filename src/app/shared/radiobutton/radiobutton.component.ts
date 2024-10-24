@@ -17,8 +17,8 @@ export class RadiobuttonComponent {
 
   @Input() radiobuttonId: string = '';  
   @Input() radiobuttonText: string = '';
-
-  inputName: string = '';
+  
+  @Input() radiobuttonIconRoute: string = '';
   
   constructor( ) { }
 
