@@ -7,21 +7,29 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    label {    
+
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        flex: 1 0 0;
+
         color: var($neutral-grey, #374649);
         font-feature-settings: 'liga' off, 'clig' off;
-    
+
         font-family: Roboto;
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem;
         letter-spacing: 0.000625rem;
+        gap: 8px;
     }
 
     select {
         display: flex;
-        height: 48px;
+        height: 40px;
         padding: 12px 8px;
         justify-content: flex-end;
         align-items: center;
@@ -29,5 +37,22 @@
         align-self: stretch;
         border-radius: 8px;
         border: 1px solid var($neutral-grey, #5D6364);
+    }
+}
+
+@media (max-width: $small) {
+    .select-container {
+        gap: 4px;
+        align-self: stretch;
+        label {
+            align-self: stretch;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+        select {
+            width: 300px;
+            height: 40px;
+        }
     }
 }

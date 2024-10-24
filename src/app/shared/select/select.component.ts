@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,13 +20,11 @@ export class SelectComponent {
 
   @Input() labelText: string = '';
 
-  optionSelected: string = "";
-
   constructor() { }
 
-  selectOption(selectedValue: string) {
-    this.optionSelected = selectedValue;
-    console.log(selectedValue);
-    this.selectedOption.emit(this.optionSelected);
+  selectOption(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedValue = selectElement.value;
+    this.selectedOption.emit(selectedValue);
   }
 }

@@ -1,18 +1,8 @@
-<!-- <label [attr.for]="selectId">{{ labelText }}</label>
-<mat-select [id]="selectId" (change)="selectOption($event.value)">
-  <option *ngFor="let option of testselectOptions" [value]="option.value">{{ option.label }}</option>
-</mat-select> -->
-
-<mat-form-field appearance="outline">
-  <div class="select-container">
-    
-    <!-- <mat-label>{{ labelText }}</mat-label> -->
-    <label [attr.for]="selectId">{{ labelText }}</label>
-    
-    <mat-select [id]="selectId" (selectionChange)="selectOption($event.value)" [formControlName]="selectId">
-      <mat-option *ngFor="let option of selectOptions" [value]="option.value">
-        {{ option.label }}
-      </mat-option>
-    </mat-select>
-  </div>
-</mat-form-field>
+<div class="select-container">
+  <label [attr.for]="selectId">{{ labelText }}</label>
+  <select [id]="selectId" (change)="selectOption($event)" [formControlName]="selectId">
+    <option *ngFor="let option of selectOptions" [value]="option.value">
+      {{ option.label }}
+    </option>
+  </select>
+</div>
