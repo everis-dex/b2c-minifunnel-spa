@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [MatCardModule, NgFor, NgIf, CommonModule, ReactiveFormsModule]
 })
 
-export class InputComponent implements OnInit {
+export class InputComponent {
 
   @Output() dataEmitter: EventEmitter<string> = new EventEmitter<string>();
 
@@ -24,16 +24,11 @@ export class InputComponent implements OnInit {
   @Input() inputIconName: string = '';
   
   @Input() labelText: string = '';
-
-  inputName: string = '';
   
   constructor( ) { }
 
-  ngOnInit(): void {
-    this.inputName = this.inputId;
-  }
-
-  sendData(event: any) {
-    this.dataEmitter.emit(event.target.value);
+  sendData(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.dataEmitter.emit(inputElement.value);
   }
 }
