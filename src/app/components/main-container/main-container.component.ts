@@ -13,6 +13,7 @@ import { ButtonComponent } from '../../shared/button/button.component';
 export class MainContainerComponent {
 
   stepStatus = StepStatus;
+  icon: boolean = true;
 
   nextClicked() {
     console.log('El botón fue pulsado');

@@ -16,6 +16,9 @@ export class ButtonComponent {
   @Input() buttonText: string = '';
   @Output() buttonClicked: EventEmitter<void> = new EventEmitter<void>();
 
+  @Input() buttonIcon: boolean = false;
+  @Input() buttonIconRoute: string = '';
+
   constructor() { }
 
   onButtonClick(): void {
