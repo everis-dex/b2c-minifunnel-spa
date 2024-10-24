@@ -47,4 +47,22 @@
 
 @media (max-width: $small) {
 
+    .radio-container {
+        width: 255px;
+        height: 20px;
+        justify-content: space-around;
+        .radio_button{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    
+        .radio_icon {
+            padding-left: 10px;
+        }
+    
+        .mdc-label {
+            width: 36px;
+        }
+    }
 }
