@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -21,7 +21,7 @@ export class InputComponent {
   @Input() inputRequired: boolean = false;
 
   @Input() inputIcon: boolean = false;
-  @Input() inputIconName: string = '';
+  @Input() inputIconRoute: string = '';
   
   @Input() labelText: string = '';
   

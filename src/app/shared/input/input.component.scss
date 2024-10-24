@@ -27,12 +27,9 @@
         gap: 8px;
     }
 
-    
-    .input_icon {
-        position: absolute;
-        left: 10px;
-        top: 57%;
-        transform: translateY(-50%);
+    .input-container {
+        position: relative;
+        display: inline-block;
     }
 
     input {
@@ -46,6 +43,15 @@
         align-items: center;
         gap: 8px;
         flex: 1 0 0;
+    }
+    
+    .input_icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        fill: #333;
     }
 }
 
