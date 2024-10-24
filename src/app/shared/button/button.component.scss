@@ -33,6 +33,25 @@ button {
   .button_icon {
     fill: $totalred;
   }
+  &--header {
+    border: 1px $buttoncolor solid;
+    background-color: $buttoncolor;
+    color: $color-white;
+    width: 247px;
+    padding: 6px 10px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    &:hover {
+      background-color: $color-white;
+      color: $totalred;
+    }
+    .button_icon {
+      fill: $totalred;
+    }
+  }
 }
 
 .secundary {
@@ -48,6 +67,7 @@ button {
     fill: $color-white;
   }
 }
+
 
 @media (max-width: $small) {
   button {
