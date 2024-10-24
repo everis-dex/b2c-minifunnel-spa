@@ -1,0 +1,21 @@
+mat-dialog-content {
+	display: flex;
+	padding-bottom: 0.6em;	
+	min-height: 12em;
+	flex-direction: column-reverse;
+	justify-content: center;
+
+	img {
+		float: right;
+		width: 1.2em;
+		cursor: pointer;
+	}
+
+	.close {
+		height: 20px;
+	}
+}
+
+* {
+	font-family: "Roboto";
+}

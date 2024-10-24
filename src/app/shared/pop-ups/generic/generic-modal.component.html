@@ -1,0 +1,120 @@
+<app-pop-up-close [disableClose]="isManteinancePopup" (closeSelected)="closePopUp()">
+    <div class="pop-up-fields" [ngClass]="{'pop-up-alert': isAlert}" id="popupModal">
+      <div [innerHTML]="bodySections[0]"></div>
+      <form #formPopUps="ngForm" *ngIf="fields && fields.length > 0" (ngSubmit)="submit(formPopUps)">
+        <ng-container *ngFor="let field of fields">
+          <div class="input">
+            <mat-form-field *ngIf="field.field_input !== 'check'" [ngClass]="{ 
+            'mat-invalid': (formPopUp?.controls[field.field_name]?.invalid) && (!formPopUp?.controls[field.field_name].pristine || formPopUp?.submitted), 
+            'mat-valid': formPopUp?.controls[field.field_name]?.valid
+            }">
+              <ng-container *ngIf="(!formPopUp?.controls[field.field_name]?.pristine || formPopUp?.submitted)">
+                <img class="valid" [src]="srcValid" *ngIf="formPopUp?.controls[field.field_name]?.valid" />
+                <img class="invalid" [src]="srcInvalid" *ngIf="formPopUp?.controls[field.field_name]?.invalid" />
+              </ng-container>
+              <label class="input-label">{{ field.field_name }}{{ field.field_required ? '*': '' }}</label>
+  
+              <input matInput [type]="field.field_input" [pattern]="field.field_pattern" [name]="field.field_name"
+                [(ngModel)]="popUpInputData[field.field_name]" [required]="field.field_required" [disabled]="isSending">
+              <img *ngIf="hasInputIcon" class="input-icon" [src]="inputIcon"
+                [ngClass]="{
+                  phone: inputIcon === 'assets/img/phone.svg'
+                }">
+              
+              <label *ngIf="formPopUp?.controls[field.field_name]?.value?.length < 1" class="input-placeholder">{{ field.field_placeholder }}</label>
+  
+              <ng-container *ngIf="(!formPopUp?.controls[field.field_name]?.pristine || formPopUp?.submitted)">
+                <mat-hint class="error" *ngIf="formPopUp?.controls[field.field_name]?.errors?.required">
+                  {{ 'errors.required' | translate }}
+                </mat-hint>
+                <mat-hint class="error"
+                  *ngIf="formPopUp?.controls[field.field_name]?.errors?.pattern && field.field_name !== 'código de verificación'">
+                  Formato no es el correcto
+                </mat-hint>
+                <mat-hint class="error"
+                  *ngIf="formPopUp?.controls[field.field_name]?.errors?.pattern && field.field_name === 'código de verificación'">
+                  Formato incorrecto. Por favor, introduce un código de 6 dígitos.
+                </mat-hint>
+              </ng-container>
+            </mat-form-field>
+          </div>
+          <div *ngIf="isCodeError" class="errorSms">
+            {{ textSmsError }}
+          </div>
+          <div *ngIf="field.field_input === 'check'" class="checkbox-container">
+            <mat-checkbox [name]="field.field_name" [(ngModel)]="popUpInputData[field.field_name]"
+              [required]="field.field_required">
+              {{ field.field_required ? '*': '' }}{{'popUps.contact-client.check' |translate}}
+            </mat-checkbox>
+            <ng-container *ngIf="(!formPopUp?.controls[field.field_name]?.pristine || formPopUp?.submitted)">
+              <mat-hint class="error" *ngIf="formPopUp?.controls[field.field_name]?.errors?.required">
+                {{ 'errors.required' | translate }}
+              </mat-hint>
+            </ng-container>
+          </div>
+        </ng-container>
+        <div [innerHTML]="bodySections[1]"></div>
+        <div class="button-container">
+          <app-button *ngIf="actions && actions.length > 0 && actions[0]?.action !== 'redireccion-a'" isThin="true"
+            buttonText="{{ actions[0].text || textButton }}" [isDisabled]="isSending" (click)="submit(formPopUps, 0)"
+            buttonClass="next">
+          </app-button>
+        </div>
+        <div class="button-container"
+          *ngIf="fields[0].field_name === 'código de verificación' && actions && actions.length > 0 && actions[1]?.action !== 'redireccion-a'">
+          <p>¿No has recibido el código? <a class="reSend" (click)="callAction(1)">{{ actions[1].text }}</a></p>
+          <!-- <app-button *ngIf="actions && actions.length > 0 && actions[1]?.action !== 'redireccion-a'" 
+            isThin="true" buttonText="{{ actions[1].text || textButton }}" [isDisabled]="isSendingAgain" (click)="callAction(1)" buttonClass="next">
+          </app-button> -->
+        </div>
+      </form>
+  
+      <div *ngIf="fields && fields.length === 0" [ngClass]="{'button-navigation-container': actions.length === 2 }">
+        <ng-container *ngFor="let action of actions; let i = index">
+          <div class="button-container" *ngIf="action.text && action.action !== 'redireccion-a'"
+            style="margin-bottom: 3%;">
+            <button mat-button class="button-doubts" [ngClass]="{'button-white': action.action === 'mantener_titular' }"
+              (click)="callAction(i)">
+              <p>
+                {{ action.text }}
+              </p>
+            </button>
+          </div>
+          <div class="button-container" *ngIf="typeOfModal === 'popup-generic-error' && !action.text"
+            style="margin-bottom: 3%;">
+            <button mat-button class="button-doubts" (click)="callAction(i)">
+              <p>
+                ¿Tienes dudas?
+              </p>
+            </button>
+          </div>
+          <div class="button-container" *ngIf="typeOfModal === 'popup-cups_error' && !action.text"
+            style="margin-bottom: 3%;">
+            <button mat-button class="button-doubts" (click)="callAction(i)">
+              <p>
+                Deja tus datos
+              </p>
+            </button>
+          </div>
+        </ng-container>
+      </div>
+      <div *ngIf="links.length > 0" class="button-container" style="margin-bottom: 3%;">
+        <ng-container *ngFor="let link of links">
+          <button mat-button class="button-doubts" (click)="goTo(link)">
+            <p>
+              {{ link.text }}
+            </p>
+          </button>
+        </ng-container>
+  
+        <!-- <ng-container *ngFor="let link of links">
+          <p><a (click)="goTo(link)">{{ link.text }}</a></p>
+        </ng-container> -->
+      </div>
+      <div class="captcha-text" *ngIf="fields && fields.length > 0">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+      </div>
+    </div>
+  </app-pop-up-close>

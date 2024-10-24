@@ -1,0 +1,814 @@
+{
+    "header": {
+        "title": "Encuentra tu energía ideal y empieza a ahorrar"
+    },
+    "footer": {
+      "copyright": "© TotalEnergies ",
+      "link1": "Política de privacidad",
+      "link2": "Aviso legal",
+      "link3": "Condiciones generales de contratación",
+      "link4": "Cookies"
+    },
+    "landing": {
+      "topText": "Contesta unas sencillas preguntas y te diremos la tarifa que mejor te va",
+      "questionText": "¿Qué tipo de energía necesitas?",
+      "buttonTextLight": "Luz",
+      "buttonTextGas": "Gas",
+      "buttonTextBoth": "Luz y Gas"
+    },
+    "cupsSelector":{
+      "topText": "Déjanos tu factura y te bajamos el precio",
+      "subTitleText": "Queremos ayudarte a conseguir el mejor ahorro en tu factura",
+      "subTitleText2": "Selecciona una opción",
+      "subTitleTextCupsCalculadora": "Si no tienes una factura puedes acceder a nuestra oferta aportando el CUPS o mediante nuestra calculadora",
+      "subTitleTextCupsPartner": "Si no tienes una factura puedes acceder a nuestra oferta aportando el CUPS",
+  
+      "buttonCups": "CUPS",
+      "buttonInvoice": "Sube tu factura",
+      "buttonCupsInvoice": "Factura o CUPS",
+      "buttonCupsSubText": "Código de suministro",
+      "buttonCupsInvoiceSubText": "Introduce el número de CUPS o sube una factura reciente",
+      "buttonInvoiceSubText": "Sube una factura reciente",
+      "buttonIntInvoiceSubText": "Mejoramos tu precio en un clic",
+  
+      "buttonEstimation": "Calculadora energética",
+      "buttonNoCups": "No tengo factura o CUPS",
+      "buttonEstimationSubText": "Calcula cuanto consume tu hogar"
+  
+    },
+    "cardSelector":{
+      "offerSelect": "Extra % descuento"
+    },
+    "heatsHouseSelector":{
+      "topText": "¿Cómo calientas tu casa?",
+      "subTitleText": "Para estimar tu perfil de consumo, necesitamos saber",
+      "subTitleText2": "qué energía utilizas para calentar tu casa",
+      "buttonGas": "Gas",
+      "buttonLigth": "Luz o alguna otra fuente de energia"
+    },
+    "newSupplySelector":{
+      "topText": "¿La conexión ya estuvo activa en el pasado?",
+      "subTitleText": "Te damos dos maneras de descubrir la tuya",
+      "subTitleText2": "Selecciona una opción",
+      "buttonoldConectionm": "Sí, quiero reactivar una conexión antigua. ",
+      "buttonNewConection": "No, la conexión es totalmente nueva"
+    },
+    "cupsInvoiceSelector":{
+      "buttonIntInvoiceSubText": "Mejoramos tu precio en un clic",
+      "topText": "Tienes tus datos técnicos",
+      "subTitleText": "Te damos dos maneras de descubrir la tuya",
+      "subTitleText2": "Selecciona una opción",
+      "buttonCupsInvoice": "Tengo factura o CUPS",
+      "noButtonCupsInvoice": "No tengo factura o CUPS",
+      "buttonCups": "CUPS",
+      "buttonInvoice": "Factura",
+      "buttonForPartners": "Calculadora energética"
+    },
+    "cupsScreen": {
+      "invoiceTitle": "Adjunta tu factura de energia",
+      "cupsNumberLuz": "Busca tu CUPS de luz",
+      "cupsNumberDual": "Busca tu CUPS de luz y gas",
+      "invoiceNumberLuz": "Busca tu Facutura de luz",
+      "cupsNumberGas": "Busca tu CUPS de gas",
+      "invoiceNumberGas": "Busca tu Factura de gas",
+      "personalizeOffer": "Con ese dato, calcularemos qué tarifa te conviene",
+      "cupsLuz": "Encuentra el número de CUPS",
+      "cupsDual": "Encuentra el número de CUPS",
+      "invoiceLuz": "Sube tu <b>factura actual de luz</b>",
+      "cupsGas": "Encuentra el número de CUPS",
+      "invoiceGas": "Sube tu <b>factura actual de gas</b>",
+      "lightNumberCups": "CUPS Luz",
+      "gasNumberCups": "CUPS Gas",
+      "cupsGasInvoiceNear": "A continuación te pediremos la <b>CUPS de Gas</b>, ten a mano la factura",
+      "questions": "¿Quieres preguntarnos algo?",
+      "invoiceData": "Encuentra los datos de tu factura",
+      "serviceCompany": "Selecciona tu actual compañía",
+      "infoHover": "Estructura del código CUPS: ES [16 dígitos] XX",
+      "legalText1": "Los datos personales facilitados a través de este formulario serán tratados por TotalEnergies Clientes S.A.U.  y  TotalEnergies Mercado España S.A.U. para la tramitación de la contratación, en los términos recogidos en la ",
+      "legalText2": "Política de Privacidad",
+      "legalText3": ", pudiendo ejercer en cualquier momento los derechos RGPD.",
+      "legalTextDocuments1": "Los datos personales facilitados a través de este formulario o de los documentos que adjuntes serán tratados por TotalEnergies Clientes, S.A.U. y TotalEnergies Mercado España, S.A.U. para la tramitación de la contratación o para contactar contigo cuando no finalices el proceso de contratación, en los términos recogidos en la ",
+      "legalTextDocuments2": " Política de Privacidad ",
+      "legalTextDocuments3": ", pudiendo ejercer en cualquier momento los derechos RGPD.",
+      "sliderFactura": "¿Tienes una factura separada para el gas?",
+      "peak": "Potencia Punta",
+      "flat": "Potencia Llano",
+      "offPeak": "Potencia Valle",
+      "potencia": "Potencia",
+      "power": "P1",
+      "power2": "P2",
+      "moreInfo": "+info"
+    },
+    "cupsInvoiceScreen": {
+      "uploadInvoice": "Subir una factura",
+      "uploadLightInvoice": "Subir factura de electricidad",
+      "uploadLightInvoiceDual": "Subir factura de electricidad y gas",
+      "uploadGasInvoice": "Subir factura de gas"
+    },
+    "partnersScreen": {
+      "selectPresent": "Escoge tu regalo",
+      "receivePresent": "Contrata ahora y consigue tu regalo",
+      "completeInformation": "Complete la información"
+    },
+    "responsive": {
+      "subTittleStepOne": "Necesitamos saber tus datos personales y del titular",
+      "cupsScreen": {
+        "cupsNumber": "Dinos tu número de CUPS"
+      },
+      "popUps": {
+        "phoneCall": {
+          "textResp": "¿Necesitas ayuda?",
+          "textResp2": "¡Te llamamos!",
+          "textResp3": "O llámanos tu mismo al",
+          "numberPhone": "900 670 503"
+        }
+      }
+    },
+    "errors": {
+      "nifnie": "Introduce un NIF/NIE válido.",
+      "mail": "Por favor, introduce un E-Mail válido.",
+      "confirmMail": "Los E-mails no coinciden",
+      "required": "Campo obligatorio",
+      "power": "introduce un valor del 0.1 al 15.0",
+      "nameInvalid": "Nombre no válido",
+      "iban": "Por favor, introduce un IBAN válido.",
+      "ibanCountry": "Necesitamos que el IBAN introducido pertenezca a España",
+      "errorPhone": "Mínimo 9 dígitos",
+      "errorPhoneInit": "Por favor, introduce un numero de telefono valido",
+      "invalidCups": "Por favor, introduce un número de CUPS válido.",
+      "town": "Por favor, introduce una ciudad válida",
+      "postCode": "Por favor, introduce un código postal válido.",
+      "invalidFormat": "Formato incorrecto",
+      "addressInvalid": "Dirección no válida",
+      "numberInvalid": "Número no válido",
+      "postCodeInvalid": "Código postal no válido",
+      "valueInvalid": "Valor no válido",
+      "incorrectInvoice": "Factura incorrecta",
+      "needInvoiceLuz": "Necesita introducir una factura",
+      "needInvoiceGas": "Necesita introducir una factura",
+      "errorGoogleAdress": "Hemos tenido un problema para localizar tu dirección, por favor rellena los datos manualmente"
+    },
+    "popUps":{
+      "sectionTextBold": "Déjanos asesorarte",
+      "formTitle": "Déjanos tus datos y te llamamos:",
+      "labelName": "Nombre y apellidos",
+      "labelAddress": "Nombre de la vía",
+      "labelMail": "E-mail",
+      "labelTlf": "Teléfono móvil",
+      "labelAffair": "Asunto",
+      "labelHelp": "¿Cómo podemos ayudarte?",
+      "buttonText": "Enviar",
+      "buttonTextSending": "Enviando...",
+      "footerTextPrivacy": "Total Gas y Electricidad, tratará los datos para esta gestión. Puede ejercitar los derechos RGPD en cualquier momento. Consulte nuestra <a href=#>Página de privacidad</a>",
+      "contactDetails": {
+        "text": "TotalEnergies Mercado España S.A.U. y/o TotalEnergies Clientes S.A.U. tratarán tus datos para realizar esta llamada, puedes ejercer los derechos recogidos por el RGPD según nuestra",
+        "checkboxOneG": "Política de Privacidad.",
+        "sectionTitle": "Necesitamos los siguientes datos",
+        "sectionTitleEnergy": "Lo Sentimos",
+        "sectionText": ", un agente de TOTAL Gas y Electricidad resolverá todas las dudas que puedas tener"
+      },
+      "formErrors": {
+        "tittle": "Algo no va bien",
+        "text1": "Por favor, revisa los campos del formulario marcados en rojo"
+      },
+      "simulatorError":{
+        "tittle": "Algo no va bien",
+        "text1": "Seleccione los campos obligatorios *"
+      },
+      "cupsErrors": {
+        "clientExist": "Ya eres cliente de TOTAL",
+        "clientExistInfo": "¡Parece que ya eres cliente nuestro! Por favor, dirígete a tu área de cliente si deseas cambiar tu contrato actual.",
+        "clientArea": "Área de cliente",
+        "ops": "¡Vaya!",
+        "cupsNoAviable": "Houston, tenemos un problema",
+        "noExistsCupsMessage": "Lo sentimos, pero no podemos localizar tu CUPS. Por favor, contacta con nuestro servicio de atención al cliente o dejános tus datos para que contactemos contigo.",
+        "doubts": "¿Tienes dudas?",
+        "defaultErrorMessage":"Lo sentimos, algo no ha ido bien. Por favor, inténtalo de nuevo más tarde.",
+        "noDataFromCupsMessage":"Lo sentimos, pero necesitamos completar la información relacionada con el número CUPS que nos has facilitado. Por favor, déjanos tus datos y contactaremos contigo lo antes posible.",
+        "noProductsAviable":"Lo sentimos, pero parece que nuestra oferta online no es la más adecuada para tu perfil de consumo. Contacta con nosotros para una propuesta personalizada.",
+        "contractNotGenerated":"Lo sentimos, parece que el proceso se ha interrumpido. Por favor, contacta con nuestro servicio de atención al cliente o déjanos tus datos para que contactemos contigo.",
+        "offlineHiring": "Ver tarifas offline",
+        "title": "Lo sentimos!",
+        "infoError": "No hemos podido recuperar tu número de CUPS. Por favor, introdúcelo manualmente o pídenos ayuda",
+        "infoErrorHouse": "Seleccione un tipo de hogar",
+        "noOfferFound": "Lo sentimos, pero no podemos encontrar una oferta online para ti. Deja tus datos de contacto y nos pondremos en contacto para ver cómo podemos ayudarte.",
+        "leaveYourData": "Deja tus datos",
+        "cupsFound": "Lo encontramos!",
+        "correctCupsNumber": "¿El número de CUPS es el correcto?",
+        "scoringError": "Lo sentimos. No podemos continuar con la contratación debido al riesgo de la operación"
+      },
+      "privacityPolicity": {
+        "tittle": "Información básica sobre Protección de Datos",
+        "responsable": "Responsable",
+        "responsableDescription": "TOTAL GAS Y ELECTRICIDAD ESPAÑA SAU., con número de identificación fiscal A-87803862",
+        "finalidad": "Finalidad",
+        "finalidadDoubts": "  Atender a consultas de los usuarios y gestión de servicios",
+        "finalidadTlf": "Gestión de los servicios de contratación via telefónica",
+        "finalidadSorry": "Atender a las consultas de los usuarios y gestión de los servicios.",
+        "finalidadCups": "Gestión de los servicios de contratación",
+        "legitimacion": "Legitimación",
+        "legitimacionDescription": " Ejecución de medidas precontractuales e interés legítimo",
+        "destinatarios": "Destinatarios",
+        "recipientsDescription": "No serán cedidos a terceros ajenos a TOTAL GAS Y ELECTRICIDAD ESPAÑA, SAU. salvo cuando la gestión de las consultas la lleven a cabo entidades de su grupo o prestadores de servicios auxiliares necesarios",
+        "recipientsDescriptionResp": "No serán cedidos a terceros ajenos",
+        "derechos": "Derechos",
+        "derechosDescription": " Acceso, rectificación, supresión, así como otros derechos explicados en la",
+        "informacion": "Información adicional",
+        "informacionDescription": "Para más información, podrá consultar nuestra"
+      },
+      "phoneCall": {
+        "contract": "¿Necesitas ayuda?",
+        "telephoneNumber": "Número de teléfono *",
+        "nameAndSurname": "Nombre y apellidos *",
+        "call": "Te llamamos",
+        "footerText": "Al completar estos datos aceptas la <a href=#>Política de privacidad</a> de TOTAL Gas y Electricidad",
+        "oido": "¡Recibido!",
+        "contacto": "Hemos recibido tu solicitud. En breve contactaremos contigo para informarte del siguiente paso.",
+        "text": "TotalEnergies Mercado España S.A.U. y/o TotalEnergies Clientes S.A.U. tratarán tus datos para realizar esta llamada, puedes ejercer los derechos recogidos por el RGPD según nuestra",
+        "check": "Autorizo la recepción de comunicaciones comerciales sobre productos o servicios energéticos de TotalEnergies.",
+        "privacyPolicy": "política de privacidad"
+      },
+      "doubtsEnergy": {
+        "sectionTitle": "Lo Sentimos",
+        "sectionSubtext": "Lo sentimos, en este caso ",
+        "sectionTextGas":"no podemos realizar la contratación online de Gas.",
+        "sectionTextlight":"no podemos realizar la contratación online de Electricidad.",
+        "sectionTextlightGas":"no podemos realizar la contratación online de Electricidad o Gas.",
+        "sectionText": ", un agente de TOTAL Gas y Electricidad resolverá todas las dudas que puedas tener",
+        "formTitle": "Deja tus datos: ",
+        "formTitleGas": "en breve nos pondremos en contacto contigo para el Gas.",
+        "formTitlelight": "en breve nos pondremos en contacto contigo para la Electricidad.",
+        "formTitlelightGas": "en breve nos pondremos en contacto contigo para la Electricidad y el Gas."
+  
+      },
+      "noElectricity": {
+        "sectionTitle": "Lo Sentimos,",
+        "sectionTextAll": "en este caso <b>no podemos realizar la contratación online</b>",
+        "sectionSubText": ", un agente de TOTAL Gas y Electricidad. Te guiará en la contratación."
+      },
+      "noGas": {
+        "sectionTitle": "Lo Sentimos,",
+        "sectionText": "en este caso",
+        "sectionTextBold": "no podemos realizar la contratación online.",
+        "sectionSubText": ", un agente de TOTAL Gas y Electricidad te guiará en la contratación."
+      },
+      "noElectricitysmall": {
+        "sectionTitle": "No tengo instalación de <b>Electricidad</b>",
+        "apologiesText": "Lo sentimos, en este caso <b>no podemos realizar la contratación online<b>.",
+        "hireGas": "Puedes seguir contratando el gas, en breve nos pondremos en contacto contigo para la <b>contratación online de Electricidad</b>",
+        "linkContact": " Deja tus datos",
+        "buttonText": "Continuar contratando Gas"
+      },
+      "noGassmall": {
+        "sectionTitle": "No tengo instalación de <b>Gas</b>",
+        "apologiesText": "Lo sentimos, en este caso <b>no podemos realizar la contratación online del Gas.</b> ",
+        "hireLuz":  "Puedes seguir contratando la electricidad, en breve nos pondremos en contacto contigo para la <b>contratación online de Gas</b>",
+        "linkContact": " Deja tus datos",
+        "buttonText": "Continuar contratando Electricidad"
+      },
+      "noGasElecsmall": {
+        "sectionTitle": "No tengo instalación de <b>Electricidad</b> y <b>Gas</b>",
+        "apologiesText": "Lo sentimos, en este caso <b>no podemos realizar la contratación online del Electricidad y Gas.</b> ",
+        "hireLuzGas":  "En breve nos pondremos en contacto contigo para la <b>Electricidad</b> y el <b>Gas</b>",
+        "linkContact": " Deja tus datos",
+        "buttonText": "Contratar tarifas offline"
+      },
+      "attachmentTooBig": {
+        "tittle": "Adjunto demasiado grande",
+        "attachmentDescription1": "El tamaño del adjunto excede ",
+        "attachmentDescription2": "Tu adjunto pesa ",
+        "attachmentDescription3": "Por favor, reduzca el tamaño o seleccione otros archivos"
+      },
+      "c2c": {
+        "title": {
+          "AlreadyCustomer": "¿Ya eres cliente de TotalEnergies?",
+          "ChangePotencia": "¿Quieres cambiar la potencia de tu instalación?",
+          "ChangeTitular": "¿Quieres cambiar el titular del punto de suministro?",
+          "NoConnection": "¿Necesitas conectar tu suministro a la red?",
+          "NoConnectionGas": "¿Necesitas conectar tu suministro a la red?",
+          "TienesDudas": "¿Tienes dudas?",
+          "NoOfferFound": "Ayúdanos a averiguar qué oferta te conviene más",
+          "ClosingContractViaCallback": "¿Necesitas ayuda para finalizar el alta?",
+          "call": "Te llamamos"
+  
+        },
+        "subtitle": {
+          "AlreadyCustomer": "Danos tu información de contacto y te llamaremos para ayudarte.",
+          "ChangePotencia": "Danos tu información de contacto y te llamaremos para revisar tus opciones.",
+          "ChangeTitular": "Danos tu información de contacto y te llamaremos para ayudarte.",
+          "NoConnection": "En este caso, la contratación online no está disponible. Pero...tranquilidad, déjanos tus datos y uno de nuestros agentes de TotalEnergies te guiará en la contratación para que puedas disponer de suministro cuanto antes.",
+          "CallUs": "Si lo prefieres llámanos al",
+          "TienesDudas": "Estamos aquí para asesorarte. Deja tus datos y nuestros agentes contactarán contigo para resolver cualquier duda.",
+          "NoOfferFound": "Necesitamos tus datos de contacto para revisar contigo las opciones disponibles para tu caso.",
+          "ClosingContractViaCallback": "Danos tus datos de contacto y te llamaremos para ayudarte."
+        }
+      },
+      "extraCost": {
+        "tittle": "Instalación incorrecta",
+        "info": "La instalación es distinta a la que pusiste en el primer paso. Está nueva instalación tiene un coste adicional"
+      },
+      "no-connection-for-one-type": {
+        "titleLuz": "Sin instalación de luz",
+        "titleGas": "Sin instalación de gas",
+        "subtitle": "Lo sentimos, en este caso la contratación online no está disponible.",
+        "textLuz": "Pero…tranquilidad. Puedes seguir contratando el gas aquí y ahora, y facilitarnos tus datos para que podamos contactar contigo y dar de alta tu suministro de luz cuanto antes.",
+        "textGas": "Pero…tranquilidad. Puedes seguir contratando la luz aquí y ahora, y facilitarnos tus datos para que podamos contactar contigo y dar de alta tu suministro de gas cuanto antes.",
+        "buttonC2C": "Te llamamos",
+        "buttonLuz": "Continuar contratando el gas",
+        "buttonGas": "Continuar contratando la luz"
+      },
+      "contact-client": {
+        "title": "Ya eres cliente de TotalEnergies",
+        "text": "Por favor, déjanos tu número de teléfono para poder llamarte y finalizar la contratación.",
+        "check": "Autorizo la recepción de comunicaciones comerciales sobre productos o servicios energéticos de TOTALENERGIES CLIENTES, S.A.U. y TOTALENERGIES MERCADO ESPAÑA, S.A.U.",
+        "privacyText": "TOTALENERGIES MERCADO ESPAÑA, S.A.U. y/o TOTALENERGIES CLIENTES, S.A.U. tratará los datos para esta gestión. Puede ejercitar los derechos RGPD en cualquier momento. Consulte nuestra "
+      },
+      "old-invoice":{
+        "title": "Factura antigua",
+        "text": "Para poder realizar la simulación necesitamos una factura más reciente. Adjunta la última que tengas o contrata facilitándonos tu CUPS."
+      },
+      "b2b-client":{
+        "title": "Cliente Pymes",
+        "text": "Esta oferta es exclusiva para particulares. No te preocupes ya que también tenemos excelentes ofertas para negocios. Contrata online."
+      },
+  
+      "BonusSocial":{
+        "title":"Suministro con Bono Social",
+        "text": "No es posible la contratación online. Contacta con Atención al Cliente."
+      }
+    },
+    "button": {
+      "landingButton": "Calcula tu cuota personalizada",
+      "back": "Atrás",
+      "next": "Continuar",
+      "validate": "Validar",
+      "invalidate": "Rechazar",
+      "cupsManual": "Entrar CUPS manualmente",
+      "contract": "Contratar",
+      "return": "Volver"
+    },
+    "conditions": {
+      "privacyPolitic": "Política de Privacidad",
+      "legalWarning": "Aviso Legal",
+      "footerArt":" y la ",
+      "footer": "He leído y acepto el",
+      "error": "Por favor, acepta la Política de Privacidad",
+      "completData":"Al completar estos datos aceptas la ",
+      "total": " de TOTAL Gas y Electricidad"
+    },
+    "hiring": {
+      "form": {
+        "infoText1": "Al introducir tu e-mail en el formulario confirmas haber leído y conocer el ",
+        "infoText2": " y la ",
+        "infoText3": " de Total Gas y Electricidad España, SAU. Podremos ponernos en contacto contigo a la dirección facilitada para ayudarte con el procedimiento de contratación",
+        "infoLink1": "aviso legal",
+        "infoLink2": "política de privacidad",
+        "topText": "Contrata tu energía a golpe de clic",
+        "secondText": "Introduce tus datos personales y los del suministro",
+        "titleForm": "Datos del titular",
+        "idNumLabel": "NIF/NIE *",
+        "nameLabel": "Nombre *",
+        "surnameLabel": "Apellidos *",
+        "tlfLabel": "Teléfono móvil *",
+        "mailLabel": "Email *",
+        "titularChange": "Como usuario efectivo del suministro, solicito el cambio de titularidad del contrato de suministro/servicios a mi nombre. Marcar esta casilla solo si esta contratación supone un cambio de titular del contrato.",
+        "confirmMailLabel": "Confirmar email",
+        "addressSupply": "Dirección de suministro",
+        "postCodeLabel": "Código postal *",
+        "municipality": "Municipio",
+        "province": "Provincia *",
+        "town": "Población *",
+        "otherTown": "Nombre de población *",
+        "roadType": "Tipo de vía *",
+        "selectMunicipality": "Seleccione un municipio",
+        "selectTown": "Seleccione una población",
+        "selectTypeOfRoad": "Seleccione tipo de vía",
+        "street": "Calle",
+        "avenue": "Avenida",
+        "track": "Camino",
+        "road": "Carretera",
+        "otherRoads": "Otras Vías",
+        "address": "Nombre de la vía *",
+        "addressNumLabel": "Número *",
+        "apartment": "Piso",
+        "door": "Puerta",
+        "findAddress":"¿No encuentras tu dirección?",
+        "addressNumber":"Buscar nombre de vía y número",
+        "payInformation": "Facturación",
+        "certificate": "Certificado de instalación eléctrica",
+        "iban": "IBAN *",
+        "termsText": "Comprueba los términos del contrato y marca las casillas cuando estés listo",
+        "checkboxOneA": "He leído y acepto las",
+        "checkboxOneB": "Condiciones Generales",
+        "checkboxOneC": "de contratación de",
+        "checkboxOneD": ", junto con la ",
+        "checkboxOneE": "facturación electrónica",
+        "checkboxOneF": ", y la ",
+        "checkboxOneG": "Política de Privacidad.",
+        "checkboxTwoA": "Acepto las condiciones generales de",
+        "checkboxTwoB": "facturación electrónica.",
+        "checkboxThree": "Consiento el tratamiento de mis datos personales una vez finalizada la relación contractual, para la realización de comunicaciones comerciales adaptadas a mi perfil de productos y servicios relativos al suministro y consumo de energía. Asimismo, consiento los mencionados tratamientos durante la vigencia y tras la finalización del contrato, sobre productos y servicios no energéticos, tanto propios como de terceros.",
+        "checkboxFourA": "He sido informado del",
+        "checkboxFourB": "Derecho de Desistimiento",
+        "checkboxFourC": "que aparece en las Condiciones Generales y se me facilita el acceso al",
+        "checkboxFourD": "Documento de Desistimiento.",
+        "checkboxFiveA": "Permito completar mi perfil comercial con información de bases de datos de terceros, con la finalidad de recibir propuestas personalizadas y la posibilidad de contratar o no determinados servicios.",
+        "checkboxSevenA": "Los datos personales facilitados a través de este formulario serán tratados por TotalEnergies Clientes S.A.U. y TotalEnergies Mercado España S.A.U. para la tramitación de la contratación, en los términos recogidos en las",
+        "checkboxSevenB": "Condiciones Generales",
+        "checkboxSevenC": ", pudiendo ejercer en cualquier momento los derechos RGPD.",
+        "checkboxEightA": "De acuerdo con lo previsto en el RD 897/2017, de 6 de octubre, le informamos que si está acogido al bono social, o si estando acogido al PVPC cumpliera los requisitos para acogerse al bono social, la suscripción de este nuevo contrato en mercado libre implicará que no resulte aplicable el bono social.",
+        "buttonText": "Contratar",
+        "buttonBackText": "Atrás",
+        "infoText": "Compruebe que los datos incluidos en el formulario son correctos, pues serán los que se utilicen para tramitar la contratación.",
+        "consentotalaltadis": "Autorizo a TotalEnergies Clientes SAU y a TotalEnergies Mercado España SAU a solicitar en mi nombre el alta en la plataforma Datadis con la finalidad de acceder a los datos de mis suministros.",
+        "consentotalvisdatasumi": "Autorizo a TotalEnergies Clientes SAU y a TotalEnergies Mercado España SAU a visualizar y descargar los datos de mis suministros para enviarme periódicamente informes sobre los mismos y consejos de ahorro.",
+        "consentotalvisdatasumitext1": "Esta autorización es indefinida y se considerará vigente hasta que Vd. solicite la cancelación de la misma en el momento que se desee sin ninguna contraprestación o penalización por parte de la comercializadora. La solicitud de revocación de esta autorización se realizará por escrito a través del correo electrónico",
+        "consentotalvisdatasumitext2": "En el caso de que se ejercite la revocación de esta autorización, dicha revocación se pondrá en conocimiento de la Plataforma Datadis C.B., que quedará exonerada de toda responsabilidad si se incumple esta obligación.",
+        "consentotalvisdatasumitext3": "Los informes sobre los consejos de ahorro se enviaran por email, SMS o se le comunicarán a través de llamada telefónica.",
+        "consentotalvisdatasumitext4": "Evaluamos el riesgo de la operación consultando ficheros de morosidad y solvencia patrimonial y de crédito."
+      },
+      "datadis": {
+        "title1": "Datos del titular",
+        "title2": "Documentación",
+        "name": "Nombre",
+        "surname": "Apellidos",
+        "phone": "Teléfono móvil",
+        "mail": "Email",
+        "mailconfirm": "Confirmar email",
+        "id": "DNI del titular",
+        "attachment": "Subir adjunto",
+        "termsText": "Por favor, acepta los términos",
+        "checkboxOneA": "TotalEnergies Mercado España S.A.U. y/o TotalEnergies Clientes S.A.U. tratarán tus datos para realizar esta llamada, puedes ejercer los derechos recogidos por el RGPD según nuestra",
+        "checkboxOneB": "política de privacidad"
+      }
+    },
+    "loadingScreen": {
+      "tittle": "Un momento, estamos calculando tu tarifa...",
+      "tittleEndOfHiring": "Estamos tramitando tu contrato. Por favor, no recargues ni abandones la página",
+      "tittleInvoiceCups": "Un momento, estamos buscando tu CUPS",
+      "tittleInvoice": "Un momento, estamos procesando tu factura",
+      "tittlePartner": "Estamos recuperando la información de tu compañía..."
+    },
+    "rates": {
+      "secondText": "Esta es nuestra mejor oferta para tu tarifa actual,o para tu tarifa estimada (si no has aportado CUPS)",
+      "secondTextPrincipal": "Esta es nuestra mejor oferta en base a las preguntas que has respondido",
+      "principalText": "La energía que quieres",
+      "secondTextInvoice": "Esta es nuestra mejor oferta en base a tu actual tarifa de acceso",
+      "secondTextCups": "Esta es nuestra mejor oferta en base a tu actual tarifa de acceso",
+      "secondTextEstimation": "Esta es nuestra mejor oferta en base a las preguntas que has respondido",
+      "light": {
+        "topText": "Tu tarifa de luz, a tu medida"
+      },
+      "gas": {
+        "topText": "La energía que quieres",
+        "secondText": "Personaliza tu tarifa de gas"
+      },
+      "lightGas": {
+        "topText": "Personaliza tu tarifa de luz y gas"
+      },
+      "card": {
+        "buttonText": "Continuar",
+        "footerText": "Más detalles",
+        "footerTextOpen": "Menos detalles de esta tarifa",
+        "renewables": "100% renovable",
+        "footer!Collapsed": "Mostrar detalles",
+        "footerCollapsed": "Más detalles",
+        "footerDiscount": "Descuentos e IVA incluido",
+        "invoicebefore": "Tu factura anterior",
+        "savingAnio": "Tu ahorro",
+        "savingMes": "Ahorro en tu factura: ",
+        "partner": "% dto. en consumo de luz, acumulable en cheque Carrefour",
+        "partnerSecondary": "Ahorro generado en tu cheque",
+        "acumulated": ", acumulable en cheque",
+        "light": {
+          "subTextImg": "Luz",
+          "secondText": "Nuestro mejor precio en electricidad y de origen"
+        },
+        "gas": {
+          "subTextImg": "Gas",
+          "secondText": "Nuestro mejor precio en gas."
+        },
+        "lightGas": {
+          "subTextImg": "Luz y Gas",
+          "secondText": "Nuestro mejor precio en gas y electricidad de origen"
+        },
+        "infoList": {
+          "text1": "Precio único las 24 horas",
+          "text2": "Sin permanencia",
+          "text3": "Tendrás a tu asesor personal para lo que necesites",
+          "text4": "Todas las gestiones online",
+          "text5": "Precio más barato por la noche",
+          "textDiscount": "% dto.",
+          "textDiscountOnLight": "% dto. en consumo de luz",
+          "textDiscountOnGas": "% dto. en fijo de gas",
+          "textDiscountOnGasVar": "% dto. en consumo de gas",
+          "textRenovable": "Energía de origen 100% renovable"
+        },
+        "price": {
+          "title": "Nuestra oferta",
+          "light": "Luz",
+          "gas": "Gas"
+        },
+        "options": {
+          "title": "Todas las ventajas por ser",
+          "digital": "100% digital.",
+          "text1": "Descuento mensual",
+          "text2": "Gestiona todo 100% online, a tu ritmo",
+          "benefit": "Benefíciate del descuento",
+          "discount": "DESCUENTO",
+          "moreInfo": "Más información",
+          "here": "+ info"
+        },
+        "slide": {
+          "title": "Quiero este descuento"
+        },
+        "energyInfo": {
+          "text1": "Potencia:",
+          "text2": "Término variable:",
+          "text3": "Término fijo:",
+          "text4": "Tarifa",
+          "air": "A tu aire",
+          "peak": "Punta:",
+          "flat": "Llano:",
+          "offPeak": "Valle:",
+          "power": "Potencia P1",
+          "power2": "Potencia P2",
+          "precioP": "Precio por Potencia",
+          "precioC": "Precio por Consumo"
+        },
+        "estimation": {
+          "tittle": "Tarifa Clásica E-Web",
+          "text1": "Precio fijo todo el año",
+          "text2": "Fácil de entender lo que gastas",
+          "text3": "Conocerás sin complicaciones el precio de tu factura",
+          "text4": "Contratación web",
+          "textVariable": "Término variable",
+          "textFixed": "Término fijo",
+          "iva": "precios sin IVA",
+          "energyPriceLight": "Precio energía luz (garantizado min. 1año) : ",
+          "energyPriceGas": "Precio energía gas (garantizado min. 1año) : ",
+          "peak": "Horario Punta",
+          "flat": "Horario Llano",
+          "offPeak": "Horario Valle"
+        },
+        "infoTextCups": "Este es el precio mensual que hemos estimado para ti en función de tu consumo histórico y resto de datos técnicos obtenidos de tu distribuidora. Ten en cuenta que puede haber variaciones mes a mes según tu consumo real. IVA incluido.",
+        "infoTextInvoice": "Oferta estimada a partir de los datos de tu factura, ajustando su importe en el impuesto eléctrico y estimación de cargos del RDL 17/2021 si procede. Ten en cuenta que el importe real a abonar cada mes dependerá del consumo y periodo facturado reales. Impuestos incluidos.",
+        "priceCard": {
+          "fulltime": "Mismo precio todos los días a todas las horas",
+          "everyday": "Precio todos los días",
+          "horas": {
+            "text": "Precio de lunes a viernes de",
+            "specialDays": "fines de semana y festivos",
+            "winter": "en horario de invierno"
+          }
+        }
+      }
+    },
+    "ratesSimulator": {
+      "light": {
+        "title": "Calcula tu consumo de Luz aproximado",
+        "houseTypeTitle1": "¿Cómo",
+        "houseTypeTitle2": "es tu",
+        "houseTypeTitle3": "hogar?",
+        "numberPersonsTitle1": "Número de",
+        "numberPersonsTitle2": "personas",
+        "numberPersonsTitle3": "en la vivienda",
+        "electricSystemsTitle1": "Selecciona si tienes",
+        "electricSystemsTitle2": "alguno de los",
+        "electricSystemsTitle3": "sistemas eléctricos:",
+        "hourDiscrimnation1": "¿Tienes actualmente más",
+        "hourDiscrimnation2": "de 1 precio",
+        "hourDiscrimnation3": "?",
+        "singleFamilyHouse": "Casa unifamiliar",
+        "apartmentHouse": "Apartamento",
+        "electricHotWater": "Agua caliente por electricidad",
+        "electricHeating": "Calefacción eléctrica",
+        "electricAcondicionatedAir": "Aire acondicionado",
+        "electricCar": "Vehículo eléctrico"
+      },
+      "light-gas": {
+        "title": "Calcula tu consumo aproximado de Luz y Gas",
+        "houseTypeTitle1": "¿Cómo",
+        "houseTypeTitle2": "es tu",
+        "houseTypeTitle3": "hogar?",
+        "numberPersonsTitle1": "Número de",
+        "numberPersonsTitle2": "personas",
+        "numberPersonsTitle3": "en la vivienda",
+        "climatizationSystemsTitle1": "¿Qué sistemas de",
+        "climatizationSystemsTitle2": "climatización",
+        "climatizationSystemsTitle3": "hay en tu hogar?",
+        "electriCarTitle1": "¿Disfrutas de un",
+        "electriCarTitle2": "vehículo eléctrico",
+        "electriCarTitle3": "?",
+        "hotWater": "Agua Caliente",
+        "heating": "Calefacción"
+      },
+      "gas": {
+        "title": "¿Cómo calientas tu casa?",
+        "gasSystemsTitle": "Para estimar tu perfil de consumo, necesitamos saber qué energía utilizas para calentar tu casa",
+        "optGas": "Gas",
+        "optOther": "Luz o alguna otra fuente de energía"
+      }
+    },
+    "services": {
+      "topText": "Contrata nuestro servicio de mantenimiento y mejora tus descuentos",
+      "secondText": "Añádelo ya a tu contrato de energía y ahorra. Nosotros nos encargamos de todo para que disfrutes de tu hogar sin sobresaltos.",
+      "addFunciona": "También nos encargamos de que tu climatización esté siempre en buenas condiciones",
+      "card": {
+        "fixedValues": {
+          "benefitOffer": "Quiero esta oferta",
+          "euros": " €/mes",
+          "euros2": "€",
+          "before": "Antes ",
+          "lightDiscount": "7",
+          "gasDiscount": "20",
+          "discount": "50",
+          "numberHours": "3",
+          "clickDiscount": "-3",
+          "percentage": "% dto.",
+          "percentageOnly": "%",
+          "percentageText": "dto.",
+          "year": "/año",
+          "hours": "h.",
+          "gas": "En el fijo de gas",
+          "light": "Consumo de Luz",
+          "months": "Durante 12 meses en la 1ª contratación",
+          "months1": "Durante",
+          "months2": "12 meses en la 1ª contratación",
+          "lightConsume": "En consumo de Luz.",
+          "gasConsume": "En consumo de Gas.",
+          "gasConsumeFixed": "En fijo de Gas.",
+          "noFunciona": "Sin funciona",
+          "noFuncionaDtoLuz": "% dto.",
+          "noFuncionaDtoGas": "% dto.",
+          "workforce": "Primeras horas de mano de obra gratis",
+          "yes": "Sí",
+          "no": "No",
+          "lightResumeIncluye": "Incluye",
+          "lightResume": "en el consumo de luz",
+          "gasResume": "en el fijo de gas",
+          "gasResumeConsume": "en el consumo de gas",
+          "gasResumeVar": "en el consumo de gas",
+          "gasResumeText": "Incluye",
+          "partnerResume": "por cheque ahorro",
+          "reparations": "(*) Horario de reparaciones y revisiones de lunes a viernes. Reparaciones urgentes de lunes a domingo de 8:00 a 1:00 h.",
+          "reparationsLuzGas": "(*) Horario de reparaciones y revisiones de lunes a viernes. Reparaciones urgentes de lunes a domingo de 8:00 a 1:00 h. Revisión anual del gas incluye la Inspección Periódica valorada en más de 50€.",
+          "vat": "Precio primer año. IVA incluido",
+          "click1": "Por la gestión",
+          "click2": "100% digital",
+          "click3": "por",
+          "digitalText": "+ DIGITAL",
+          "tarjetaRegaloMediamarkt": "Tu tarjeta de Regalo MediaMarkt será de 75€ al contratar el servicio FACILITA.",
+          "tarjetaRegaloMediamarktDual": "Tu tarjeta de Regalo MediaMarkt será de 150€ al contratar el servicio FACILITA."
+        },
+        "light": {
+          "subTextImg": "Luz",
+          "title": "Funciona Luz",
+          "subtitleLight": "Cuidamos todos tus aparatos eléctricos y la instalación eléctrica de tu hogar.",
+          "subtitleGas": "Mantén al día tus sistemas de climatización, revisión y asistencia técnica y mantenimiento preventivo.",
+          "subtitleLightGas": "Cuidamos de tus electrodomésticos y de la instalación del gas/electricidad de tu hogar.",
+          "subtitleClima": "Contrata este servicio para disponer de mantenimiento y asistencia técnica para tus equipos de climatización.",
+          "text1": " Revisión, mantenimiento y reparación de tu instalación eléctrica.",
+          "text2": " Reparación de electrodomésticos.",
+          "text3": " Reparaciones de fontanería.",
+          "text4": " Si te quedas sin luz, llegamos en menos de 3 horas.",
+          "text5": " Si te quedas sin luz o gas, llegamos en menos de 3 horas.",
+          "text6": " Te incluimos la inspección periódica (valor 50€)",
+          "text7": " Revisión anual de la instalación de gas (incluye la Inspección Periódica valorada en más de 50 €)",
+          "text8": " Reparaciones de fontanería (de lunes a viernes)",
+          "text9": " Reparamos tus principales electrodomésticos y fontanería.",
+          "text10": " Mejora las coberturas de Facilita Luz y Gas incluyendo:",
+          "text11": " Mantenimiento anual de tu caldera/calentador.",
+          "text12": " Reparación de electrodomésticos."
+        },
+        "gas": {
+          "subTextImg": "Gas",
+          "title": "",
+          "subtitle": "",
+          "text1": " Revisiones anuales de tu instalación de gas.",
+          "text2": " Te incluimos la inspección periódica obligatoria.",
+          "text3": " Reparaciones de electrodomésticos y fontanería.",
+          "text4": " Si te quedas sin luz o gas, llegamos en menos de 3 horas."
+        },
+        "lightGas": {
+          "subTextImg": "Luz y Gas",
+          "title": "Funciona Plus",
+          "subtitle": "Mantén al día tus sistemas de climatización, revisión y asistencia técnica y mantenimiento preventivo."
+        },
+        "clima": {
+          "subTextImg": "Climatización",
+          "text1": "Revisión y asistencia técnica de equipos de hasta 70 kW.",
+          "text2": "Mantenimiento preventivo según la normativa."
+        }
+      }
+    },
+    "energyAvailable": {
+      "topText": "¿Tienes la luz y el gas instalado y funcionando?",
+      "secondText": "Para contratar luz y gas, indícanos tu situación actual",
+      "topTextLuz": "¿Tienes la luz instalada y funcionando?",
+      "secondTextLuz": "Para contratar luz, indícanos tu situación actual",
+      "topTextGas": "¿Tienes el gas instalado y funcionando?",
+      "secondTextGas": "Para contratar gas, indícanos tu situación actual",
+      "textCardLight": "Sí, tengo luz",
+      "subTextCardLight": "Tengo contrato con otra compañía",
+      "textCardNoLight": "No tengo luz",
+      "subTextNoCardLight": "Necesito dar de alta el servicio desde cero",
+      "textCardGas": "Sí, tengo gas",
+      "subTextGas": "Tengo el gas ya funcionando",
+      "textCardNoGas": "No tengo gas",
+      "subTextNoGas": "necesito dar de alta el gas"
+    },
+    "toggle": {
+      "yes": "Sí",
+      "no": "No"
+    },
+    "successPage": {
+      "hire": {
+        "titleLuzGas": "¡Gracias por elegir nuestra energía!",
+        "titleLuz": "¡Gracias por elegir nuestra energía!",
+        "titleGas": "¡Gracias por elegir nuestra energía!",
+        "subtitle": "En breve recibirás todos los detalles sobre esta contratación en un correo electrónico donde adjuntaremos tu contrato.",
+        "subtitleEstimation": "¡Gracias por elegir nuestra energía! Contactaremos contigo próximamente para pedirte los datos que necesitamos y completar la contratación.",
+        "text1": "Muy pronto podrás disfrutar de todas las ventajas de ser de TotalEnergies.",
+        "text1Estimation": "Estamos deseando darte la bienvenida a TotalEnergies.",
+        "button": "Inicio",
+        "subTitleResponsive": "En breve recibirás todos los detalles sobre esta contratación en un correo electrónico donde adjuntaremos tu contrato.",
+        "subTitleResponsiveEstimation": "Contactaremos contigo próximamente para pedirte los datos que necesitamos y completar la contratación.",
+        "textResponsive": "Accede al área de cliente y consulta la evolución de tu nuevo contrato."
+      },
+      "datadis": {
+        "titleLuzGas": "¡Gracias por elegir nuestra energía!",
+        "titleLuz": "¡Gracias por elegir nuestra energía!",
+        "titleGas": "¡Gracias por elegir nuestra energía!",
+        "subtitle": "Te enviaremos un SMS al móvil que nos has facilitado para que firmes tu contrato de forma digital y sin esperas.",
+        "text1": "Muy pronto podrás disfrutar de todas las ventajas de ser de TotalEnergies.",
+        "button": "Inicio",
+        "subTitleResponsive": "Te hemos enviado a tu correo una copia del contrato para que la firmes.",
+        "textResponsive": "Accede al área de cliente y consulta la evolución de tu nuevo contrato."
+      }
+    },
+    "banner":{
+      "button1": "Cambio de Titular",
+      "button2": "Cambio de Potencia",
+      "button3":"Deja tus datos",
+      "multipleHire": "Contratación especial",
+      "multipleHireContact": "Si además de contratar con nosotros quieres cambiar la potencia de tu suministro, introduce tus datos o llámanos: ",
+      "multipleHireContactGas": "Si eres un nuevo titular en el suministro, introduce tus datos o llámanos: ",
+      "TextBannerEnergy":"Deja tu información de contacto y te llamaremos para ver cómo podemos ayudarte",
+      "titleBannerEnergy": "¿Ya eres cliente de TotalEnergies?"
+    },
+    "cardResume":{
+      "resume": "Tu resumen",
+      "gas": "Gas",
+      "light": "Luz",
+      "titlePrice": "Nuestra mejor oferta",
+      "finalPrice": "PRECIO FINAL",
+      "fixPrice": "Término fijo",
+      "variablePrice": "Término variable",
+      "precioP": "Precio por Potencia",
+      "precioC": "Precio por Consumo",
+      "partnerSaveCheck": "Acumulación en tu cheque ahorro:",
+      "peak": "Horario Punta",
+      "flat": "Horario Valle",
+      "offPeak": "Horario Llano",
+      "clickText": "Descuento cada <b>4 meses</b> en tu factura",
+      "clickTitle": "+ DIGITAL",
+      "footer": "Más detalles",
+      "offerTitle": "Oferta calculada para",
+      "offerCups": "CUPS:",
+      "offerRate": "Tarifa:",
+      "offerPotency": "Potencia",
+      "euroMes": "€/mes",
+      "euro": "€",
+      "kwMes": "€/kWh",
+      "kwhMes": "€/kWh",
+      "kwhourMes": "€/kW día",
+      "kwhHourMes": "€/kW/día",
+      "kwhHourAno": "€/kW/a\u00f1o",
+      "total": "Total"
+    },
+    "bannerDiscount":{
+      "text1": "OFERTA LANZAMIENTO:",
+      "text2":"Sube tu factura y te calculamos tu descuento personalizado.",
+      "text3":"¡Exclusivo Online!"
+    },
+    "planAhora": {
+      "textoLegal1": "Este precio es una estimación calculada con el precio medio del mes anterior en base al consumo según el perfil tipo que publica Red Eléctrica correspondiente a la tarifa de acceso del suministro, excluyendo el coste del mecanismo de ajuste del RDL 10/2022 y la financiación del bono social. Al tratarse de una estimación, el precio final variará en función de tu perfil de consumo, los precios de la electricidad y los posibles cambios en los conceptos regulados.",
+      "estimation": {
+        "infolist": {
+          "no_permanency": "Sin permanencia",
+          "costEnergy": "Energía a precio de coste",
+          "hourPrice": "Tu tarifa con precio hora a hora"
+        },
+        "potencial": {
+          "precioCuotaFija": "Cuota de gestión"
+        }
+      },
+      "resume": {
+        "cuotaFijaSection1": "Incluye",
+        "cuotaFijaSection2": "€ de cuota fija de luz",
+        "cuotaFija": "Cuota de gestión"
+      }
+    }
+  }
+  
