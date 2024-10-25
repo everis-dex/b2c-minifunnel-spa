@@ -29,9 +29,12 @@ button {
   &:hover {
     background-color: $color-white;
     color: $totalred;
+    .button_icon .button_icon_path {
+      stroke: red;
+    }
   }
-  .button_icon {
-    fill: $totalred;
+  .button_icon .button_icon_path {
+    stroke: white;
   }
   &--header {
     border: 1px $buttoncolor solid;
@@ -47,9 +50,12 @@ button {
     &:hover {
       background-color: $color-white;
       color: $totalred;
+      .button_icon .button_icon_path {
+        stroke: red;
+      }
     }
-    .button_icon {
-      fill: $totalred;
+    .button_icon .button_icon_path {
+      stroke: white;
     }
   }
 }

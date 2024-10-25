@@ -16,8 +16,8 @@ export class ButtonComponent {
   @Input() buttonText: string = '';
   @Output() buttonClicked: EventEmitter<void> = new EventEmitter<void>();
 
-  @Input() buttonIcon: boolean = false;
-  @Input() buttonIconRoute: string = '';
+  @Input() buttonIconPhone: boolean = false;
+  @Input() buttonIconSend: boolean = false;
 
   constructor() { }
 
