@@ -4,17 +4,23 @@ import { StepStatus } from '../../interfaces/interfaces';
 import { ApicallsService } from '../../services/apicalls.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PopupsService } from '../../services/popup.service';
+import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
   selector: 'app-main-container',
   standalone: true,
-  imports: [StepCardComponent],
+  imports: [StepCardComponent, ButtonComponent],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.scss'
 })
 export class MainContainerComponent {
 
   stepStatus = StepStatus;
+  icon: boolean = true;
+
+  nextClicked() {
+    console.log('El botón fue pulsado');
+	}
 
   // partner_default = '22354f49';
   partner: string = '';

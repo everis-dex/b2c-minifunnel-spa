@@ -1,1 +1,12 @@
 <p>main-container works!</p>
+
+<div class="button-navigation-container">
+    <app-button buttonId="continuar-cups" buttonType="primary" (buttonClicked)="nextClicked()" buttonText="Continuar">
+    </app-button>
+</div>
+
+<app-button buttonId="continuar-cups" buttonType="primary--header" (buttonClicked)="nextClicked()" buttonText="Teléfono contrataciones" [buttonIconPhone]="icon">
+</app-button>
+
+<app-button buttonId="continuar-cups" buttonType="primary" (buttonClicked)="nextClicked()" buttonText="Continuar" [buttonIconSend]="icon">
+</app-button>

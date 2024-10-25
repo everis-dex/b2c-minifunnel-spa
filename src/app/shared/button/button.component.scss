@@ -1,0 +1,93 @@
+@import "../../../styles/variables.scss";
+
+button {
+  display: flex;
+  height: 48px;
+  padding: 12px 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+  border-radius: 80px;
+  background: var($totalred, #ED0000);
+  color: var($color-white, #FFF);
+
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px $buttoncolor solid;
+  background-color: $buttoncolor;
+  color: $color-white;
+  width: 213px;
+  &:hover {
+    background-color: $color-white;
+    color: $totalred;
+    .button_icon .button_icon_path {
+      stroke: red;
+    }
+  }
+  .button_icon .button_icon_path {
+    stroke: white;
+  }
+  &--header {
+    border: 1px $buttoncolor solid;
+    background-color: $buttoncolor;
+    color: $color-white;
+    width: 247px;
+    padding: 6px 10px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    &:hover {
+      background-color: $color-white;
+      color: $totalred;
+      .button_icon .button_icon_path {
+        stroke: red;
+      }
+    }
+    .button_icon .button_icon_path {
+      stroke: white;
+    }
+  }
+}
+
+.secundary {
+  border: 1px solid $totalred;
+  background-color: $color-white;
+  color: $totalred;
+  width: 213px;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $color-white;
+  }
+  .button_icon {
+    fill: $color-white;
+  }
+}
+
+
+@media (max-width: $small) {
+  button {
+    width: 375px;
+    padding: 12px 40px;
+    gap: -47px;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 18px;
+  }
+ .primary {
+    width: -moz-fit-content;
+  }
+  .secundary {
+    width: -moz-fit-content;
+  }
+}
