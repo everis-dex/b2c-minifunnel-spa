@@ -121,6 +121,11 @@ export class PopupsService {
     this.openGenericPopup("partner_nopublicado", {}, {});
   }
 
+  // openPhoneCallComponent(): void {
+  //   this.dialog.open(PhonecallComponent, {
+  //     panelClass: 'mat-dialog-phonecall',
+  //   });
+  // }
 
   openGenericPopup(modalType: string, popupData: any = {}, dataInfo: any, situation?: string, options?: any, disableClose = true) {
     const dialogRef = this.dialog.open(GenericModalComponent, {
