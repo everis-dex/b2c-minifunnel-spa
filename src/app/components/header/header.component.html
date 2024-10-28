@@ -1,1 +1,29 @@
-<p>header works!</p>
+@if (!isPartner) {
+    <div class="header" id="header">
+        <mat-toolbar>
+            <div class="icons">
+                <div class="logo-container">
+                    <img src="assets/icons/total_icon.png" alt="Total Energies logo"/>
+                </div>
+            </div>
+            <div class="contact-container">
+                <app-button buttonId="eader-phone" buttonType="primary--header" (buttonClicked)="nextClicked()" buttonText="Teléfono contrataciones" [buttonIconPhone]="icon">
+                </app-button>
+            </div>
+        </mat-toolbar>
+    </div>
+} @else {
+    <div class="header" id="header">
+        <mat-toolbar>
+            <div class="icons">
+                <div class="logo-container">
+                    <img src="assets/icons/total_icon.png" alt="Total Energies logo"/>
+                </div>
+            </div>
+            <div class="contact-container">
+                <app-button buttonId="eader-phone" buttonType="primary--header" (buttonClicked)="nextClicked()" buttonText="Teléfono contrataciones" [buttonIconPhone]="icon">
+                </app-button>
+            </div>
+        </mat-toolbar>
+    </div>
+}
