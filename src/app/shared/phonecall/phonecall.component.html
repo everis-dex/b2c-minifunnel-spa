@@ -1,0 +1,71 @@
+<div class="phonecall-desktop" [ngClass]="{'animate__fadeOut': !isVisible, 'animate__delay-2s': isVisible , 'dosFacilita': isFacilitaDual > 1 && mobileMode}" *ngIf="noC2C !== 'TRUE'">
+  <div *ngIf="isVisible" class="cardPhonecall" [ngClass]="{'sent': isSent}">
+    <div class="header">
+    <p *ngIf="!apiCallsSrv.phoneCallIsSent">{{'popUps.phoneCall.contract' | translate}}</p> 
+    <img src="assets/img/ico-close-red.svg" (click)="close()" class="close-icon" > 
+    </div>
+    <form #formTelephone="ngForm" (ngSubmit)="submitClicked(formTelephone)" *ngIf="!apiCallsSrv.phoneCallIsSent">
+      <div>
+        <mat-form-field
+          [ngClass]="{ 'mat-invalid': (formTelephone?.controls?.telephoneNumber?.invalid || inputPhoneInitError) && (!formTelephone?.controls?.telephoneNumber?.pristine || formTelephone?.submitted), 'mat-valid': formTelephone?.controls?.telephoneNumber?.valid && inputPhoneInitValid}">
+          <img class="valid" [src]="srcValid" />
+          <img class="invalid" [src]="srcInvalid" />
+          <label>{{'popUps.phoneCall.telephoneNumber' | translate}}</label>
+          <input matInput name="telephoneNumber" [(ngModel)]="telephoneNumber" pattern="(^\+)?\d*" minlength="9" maxlength="9"
+            required="true" (ngModelChange)="ValidatePhoneNumber($event)">
+          <mat-hint class="error"
+            *ngIf="formTelephone?.controls?.telephoneNumber?.invalid && (!formTelephone?.controls?.telephoneNumber?.pristine || formTelephone?.submitted)  && !formTelephone?.controls?.telephoneNumber?.value">
+            {{ 'errors.required' | translate }}
+          </mat-hint>
+          <mat-hint class="error"
+            *ngIf="formTelephone?.controls?.telephoneNumber?.invalid && formTelephone?.controls?.telephoneNumber?.value">
+            {{ 'errors.errorPhone' | translate }}
+          </mat-hint>
+          <mat-hint class="error" *ngIf="inputPhoneInitError && !inputPhoneInitValid && !formTelephone?.controls?.telephoneNumber?.invalid">
+            {{ 'errors.errorPhoneInit' | translate }}
+        </mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="conditions">
+        <mat-checkbox
+          class="checkboxTerms"
+          name="isChecked"
+          [(ngModel)]="isChecked">
+          {{'popUps.phoneCall.check' |translate}}
+        </mat-checkbox>
+      </div>
+      <p class="privacy-policy">{{'popUps.phoneCall.text' | translate}} <a [href]="'https://www.totalenergies.es/es/hogares/politica-de-privacidad'" target="_blank">{{'popUps.phoneCall.privacyPolicy' | translate}}.</a></p>
+
+      <div class="footer-cardPhonecall">
+        <button  class="te-llamamos" id="te-llamamos-button-hogares" mat-button [disabled]="isSending" [ngClass]="{sending: isSending}">
+          <b *ngIf="!isSending">{{'popUps.phoneCall.call' | translate}}</b>
+          <b *ngIf="isSending">{{'popUps.buttonTextSending' | translate}}</b>
+        </button>
+      </div>
+    </form>
+
+    <ng-container *ngIf="apiCallsSrv.phoneCallIsSent">
+      <div class="oido">
+        <div class="tittle">
+          <img class="check" src="assets/img/tick-blue.svg" />
+          <h1>{{'popUps.phoneCall.oido' | translate}}</h1>
+        </div>
+        <h2> {{ nameAndSurname }}</h2>
+        <h3>{{'popUps.phoneCall.contacto' | translate}}</h3>
+      </div>
+    </ng-container>
+    <div class="captcha-text">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+    </div>
+  </div>
+</div>
+
+<div class="phonecall-mobile" (click)="openDialog()" *ngIf="noC2C !== 'TRUE'"[ngClass]="{ 'mobileMode': (isFacilitaDual > 1 && mobileMode)}">
+    <img src="assets/img/ico-header-tele-inverted.svg">
+    <div class="text-container">
+        <p class="text-one">{{'responsive.popUps.phoneCall.textResp' |translate}}</p>
+        <p class="text-two">{{'responsive.popUps.phoneCall.textResp2' |translate}}</p>
+    </div>
+</div>

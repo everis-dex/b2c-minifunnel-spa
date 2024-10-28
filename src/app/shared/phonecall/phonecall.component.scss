@@ -1,0 +1,283 @@
+@import "../../variables.scss";
+
+.phonecall-desktop {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 33%;
+  left: 1em;
+  button {
+    color: $color-white;
+    background-color: $totalred;
+    border-radius: 18px 18px 18px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 1em;
+    border: none;
+    &.sending {
+      background-color: #47922cb8;
+    }
+  }
+
+  button.te-llamamos {
+    padding: 0.8em 2.8em;
+    margin: 0 auto 0.5em;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 13px;
+    letter-spacing: -0.12px;
+    color: $color-text-total;
+  }
+  p.privacy-policy {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  #llamanosTuMismo {
+    text-align: center;
+    margin: 1em 0;
+    p,
+    a {
+      font-size: 14px;
+      margin: auto 0;
+    }
+  }
+
+  mat-form-field {
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0;
+    .mat-input-element {
+      margin-top: 5px;
+      background-color: $input-color;
+      height: 2.3em;
+      border-radius: 0.5em;
+    }
+    &.mat-valid {
+      color: green;
+      ::ng-deep.mat-form-field-underline {
+        background-color: green;
+      }
+      .valid {
+        display: block !important;
+      }
+      .invalid {
+        display: none !important;
+      }
+    }
+    &.mat-invalid {
+      ::ng-deep.mat-form-field-underline {
+        background-color: red;
+      }
+      .valid {
+        display: none !important;
+      }
+      .invalid {
+        display: block !important;
+      }
+    }
+    .valid,
+    .invalid {
+      position: absolute;
+      right: 0em;
+      width: 1em;
+      top: 0.4em;
+      display: none;
+    }
+    ::ng-deep .mat-form-field-wrapper {
+      padding: 0 !important;
+    }
+  }
+
+  .mat-hint {
+    margin-top: 1em;
+  }
+
+  .cardPhonecall {
+    position: relative;
+    transform: scale(0.9);
+    background-color: $color-white;
+    border: 1px blue solid;
+    border-radius: 8px;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    width: 280px;
+    padding-bottom: 0.5em;
+    margin-top: -4.2px;
+    line-height: 15px;
+    &.sent {
+      padding-bottom: 2em;
+    }
+
+    .conditions {
+      margin: 1em -1em;
+      font-size: 9px;
+      .invalid-checkbox {
+        color: $totalred;
+        ::ng-deep .mat-checkbox-frame {
+          color: $totalred;
+          border: 2px solid $totalred;
+        }
+      }
+      ::ng-deep .mat-checkbox-label {
+        font-size: 11px !important;
+      }
+    }
+  }
+  .checkboxTerms {
+    font-size: 13px;
+    color: $color-text-total;
+    margin: auto;
+  }
+  a {
+    color: $color-text-total;
+  }
+  .ocultar {
+    visibility: hidden;
+  }
+
+  .oido {
+    .tittle {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    h1 {
+      color: $totalred;
+      text-align: center;
+      font-size: 2em;
+      padding-top: 0.4em;
+    }
+    h2 {
+      color: #333333;
+      text-align: center;
+    }
+    h3 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    img.check {
+      width: 20px;
+    }
+  }
+  .collapsed-phone {
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    z-index: -1;
+    display: none;
+  }
+  .expanded-phone {
+    visibility: visible;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 2s;
+    z-index: 2;
+  }
+  .expanded-phone-button {
+    visibility: visible;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 2s;
+  }
+  .collapsed-img {
+    transform: rotate(180deg);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-weight: 500;
+      margin: auto 0;
+    }
+    img {
+      width: 20px;
+    }
+  }
+
+  .button-collapsed {
+    color: $color-white;
+    background-color: $totalred;
+    border-radius: 50%;
+    width: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border: none;
+    height: 3.5em;
+    &.sending {
+      background-color: #47922cb8;
+    }
+    b {
+      margin-left: 0.5em;
+    }
+
+    img {
+      width: 2em;
+    }
+  }
+  .close-icon {
+    cursor: pointer;
+  }
+}
+
+.phonecall-mobile {
+  height: 82px;
+  border-radius: 6px;
+  background-color: $color-white;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 5px;
+  cursor: pointer;
+  margin: 1em auto 100px;
+  position: relative;
+  width: 210px;
+  white-space: nowrap;
+  img {
+    width: 64px;
+  }
+
+  .text-container {
+    margin: auto 0.5em;
+    .text-one {
+      font-size: 12px;
+      letter-spacing: -0.14px;
+      line-height: 16px;
+      color: $color-text-total;
+      margin-bottom: 0.5em;
+    }
+    .text-two {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.16px;
+      line-height: 16px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.dosFacilita{
+  display: none !important;
+}
+.mobileMode{
+  display: flex !important;
+}
+
+@media (max-width: $extra-large) {
+  .phonecall-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $extra-large) {
+  .phonecall-mobile {
+    display: none;
+  }
+}
