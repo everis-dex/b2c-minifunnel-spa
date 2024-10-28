@@ -1,0 +1,9 @@
+<div class="input_field">
+    <label [attr.for]="inputId">{{ labelText }}</label>
+    <div class="input-container">
+        <input matInput type="text" class="input_box"  [id]="inputId" (input)="sendData($event)" [formControlName]="inputId" [required]="inputRequired">
+        @if (inputIcon) {
+            <img class="input_icon" [src]="inputIconRoute" alt=""/>
+        }
+    </div>
+</div>
