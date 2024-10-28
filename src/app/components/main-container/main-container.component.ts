@@ -14,6 +14,7 @@ import { ButtonComponent } from '../../shared/button/button.component';
   styleUrl: './main-container.component.scss'
 })
 
+
 export class MainContainerComponent {
 
   stepStatus = StepStatus;

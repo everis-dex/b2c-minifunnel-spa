@@ -1,0 +1,8 @@
+<div class="select-container">
+  <label [attr.for]="selectId">{{ labelText }}</label>
+  <select [id]="selectId" (change)="selectOption($event)" [formControlName]="selectId">
+    <option *ngFor="let option of selectOptions" [value]="option.value">
+      {{ option.label }}
+    </option>
+  </select>
+</div>
