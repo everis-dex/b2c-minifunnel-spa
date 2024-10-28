@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.radio-container {
+    display: flex;
+    width: 120px;
+    height: 20px;
+    padding: 12px 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    border-radius: 12px;
+    border: 1px solid var(--neutral-gray-300, #A8ADAE);
+    background: var(--primary-white, #FFF);
+
+    .radio_button{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .radio_icon {
+        padding-left: 10px;
+    }
+
+    .mdc-label {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4px;
+        display: flex;
+        width: 33px;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        color: var($neutral-grey, #374649);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.1px;
+    }
+}
+
+@media (max-width: $small) {
+
+    .radio-container {
+        width: 255px;
+        height: 20px;
+        justify-content: space-around;
+        .radio_button{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    
+        .radio_icon {
+            padding-left: 10px;
+        }
+    
+        .mdc-label {
+            width: 36px;
+        }
+    }
+}
