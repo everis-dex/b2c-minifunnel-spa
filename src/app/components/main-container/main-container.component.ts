@@ -13,6 +13,7 @@ import { ButtonComponent } from '../../shared/button/button.component';
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.scss'
 })
+
 export class MainContainerComponent {
 
   stepStatus = StepStatus;
