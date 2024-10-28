@@ -243,7 +243,7 @@ export interface Discountclick {
 export interface C2C {
   recaptcha?: string;
   Flow?: string;
-  Partner: string;
+  Partner?: string;
   Partner_fields?: Array<any>;
   ScanID?: string;
   Privacy?: string;

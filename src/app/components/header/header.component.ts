@@ -2,11 +2,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ButtonComponent } from '../../shared/button/button.component';
+import { PhonecallComponent } from '../../shared/phonecall/phonecall.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatToolbarModule, NgFor, NgIf, CommonModule, ButtonComponent],
+  imports: [MatToolbarModule, NgFor, NgIf, CommonModule, ButtonComponent, PhonecallComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -2,14 +2,14 @@
   <div *ngIf="isVisible" class="cardPhonecall" [ngClass]="{'sent': isSent}">
     <div class="header">
     <p *ngIf="!apiCallsSrv.phoneCallIsSent">{{'popUps.phoneCall.contract' | translate}}</p> 
-    <img src="assets/img/ico-close-red.svg" (click)="close()" class="close-icon" > 
+    <img src="assets/img/ico-close-red.svg" (click)="close()" class="close-icon" alt=""> 
     </div>
     <form #formTelephone="ngForm" (ngSubmit)="submitClicked(formTelephone)" *ngIf="!apiCallsSrv.phoneCallIsSent">
       <div>
         <mat-form-field
           [ngClass]="{ 'mat-invalid': (formTelephone?.controls?.telephoneNumber?.invalid || inputPhoneInitError) && (!formTelephone?.controls?.telephoneNumber?.pristine || formTelephone?.submitted), 'mat-valid': formTelephone?.controls?.telephoneNumber?.valid && inputPhoneInitValid}">
-          <img class="valid" [src]="srcValid" />
-          <img class="invalid" [src]="srcInvalid" />
+          <img class="valid" [src]="srcValid" alt=""/>
+          <img class="invalid" [src]="srcInvalid" alt=""/>
           <label>{{'popUps.phoneCall.telephoneNumber' | translate}}</label>
           <input matInput name="telephoneNumber" [(ngModel)]="telephoneNumber" pattern="(^\+)?\d*" minlength="9" maxlength="9"
             required="true" (ngModelChange)="ValidatePhoneNumber($event)">
@@ -47,7 +47,7 @@
     <ng-container *ngIf="apiCallsSrv.phoneCallIsSent">
       <div class="oido">
         <div class="tittle">
-          <img class="check" src="assets/img/tick-blue.svg" />
+          <img class="check" src="assets/img/tick-blue.svg" alt=""/>
           <h1>{{'popUps.phoneCall.oido' | translate}}</h1>
         </div>
         <h2> {{ nameAndSurname }}</h2>
@@ -63,7 +63,7 @@
 </div>
 
 <div class="phonecall-mobile" (click)="openDialog()" *ngIf="noC2C !== 'TRUE'"[ngClass]="{ 'mobileMode': (isFacilitaDual > 1 && mobileMode)}">
-    <img src="assets/img/ico-header-tele-inverted.svg">
+    <img src="assets/img/ico-header-tele-inverted.svg" alt="">
     <div class="text-container">
         <p class="text-one">{{'responsive.popUps.phoneCall.textResp' |translate}}</p>
         <p class="text-two">{{'responsive.popUps.phoneCall.textResp2' |translate}}</p>

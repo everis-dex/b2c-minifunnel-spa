@@ -1,53 +1,52 @@
 import { ApicallsService } from './../../services/apicalls.service';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { PopupsService } from 'src/app/services/popups.service';
+import { PopupsService } from './../../services/popup.service';
 //import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { load } from 'recaptcha-v3-enterprise';
-import { DataService } from 'src/app/services/data.service';
-import { C2C } from 'src/app/interfaces/interfaces';
+import { C2C } from './../../interfaces/interfaces';
 import { environment } from '../../../environments/environment';
-import { FormHelperService } from 'src/app/services/form-helper.service';
-import * as literalsJson from 'src/assets/i18n/sp.json';
-import { TagManagerService } from 'src/app/services/tagManager.service';
+import { FormHelperService } from './../../services/form-helper.service';
+import * as literalsJson from './../../../assets/i18n/sp.json';
+import { TagManagerService } from './../../services/tagManager.service';
 
 @Component({
   selector: 'app-phonecall',
   templateUrl: './phonecall.component.html',
   styleUrls: ['./phonecall.component.scss'],
 })
+
 export class PhonecallComponent implements OnInit {
   isVisible = true;
   @Output() isVisibleEvent = new EventEmitter<boolean>();
-  @Input() noC2C;
-  @Input() isFacilitaDual;
-  @Input() flow;
-  partnerPhone: string;
-  isChecked: boolean;
+  @Input() noC2C: any;
+  @Input() isFacilitaDual: any;
+  @Input() flow: any;
+  partnerPhone: string = '';
+  isChecked: boolean = false;
   isSending = false;
   srcValid = 'assets/icons/ico-tick.svg';
   srcInvalid = 'assets/img/ico-close-red.svg';
-  infoJson: C2C;
+  infoJson?: C2C;
   domainUrl = environment.documents_url;
   partner: any;
   inputPhoneInitValid = false;
   inputPhoneInitError = false;
   literalsPopUp = (literalsJson as any).default.popUps;
   flowArr = ['facilita', 'twoP'];
-  mobileMode: boolean;
+  mobileMode: boolean = false;
 
   constructor(
     private popups: PopupsService,
     private formHelper: FormHelperService,
     private apiCallsSrv: ApicallsService,
     //private recaptchaV3Service: ReCaptchaV3Service,
-    private datasrv: DataService,
     private popService: PopupsService,
     private tagManagerSrv: TagManagerService
   ) {}
 
   ngOnInit(): void {
-    this.partner = this.datasrv.loadPartnerData();
+    this.partner = this.apiCallsSrv.recoverPartnerData(''); // Temporal 
     this.noC2C = this.partner.No_C2C ? this.partner.No_C2C : 'FALSE';
 
     if (this.partner.Partner_name) {
@@ -88,26 +87,28 @@ export class PhonecallComponent implements OnInit {
       this.inputPhoneInitValid = false;
     }
   }
+
   submitClicked(f: NgForm): void {
     if (f.valid && this.inputPhoneInitValid) {
       this.isSending = true;
-      const offer = this.datasrv.loadOffer();
-      const partner = this.datasrv.loadPartnerData();
-      const lead = this.datasrv.loadLead();
+      // const offer = this.apiCallsSrv.recoverPartnerData(''); // Temporal 
+      const partner = this.apiCallsSrv.recoverPartnerData(''); // Temporal 
+      // const lead = this.apiCallsSrv.recoverPartnerData(''); // Temporal 
       this.infoJson = {
         recaptcha: '',
         Flow: 'C2C',
-        Partner: partner.Partner_name,
-				Partner_fields: partner?.Partner_fields ?? [],
+        // Partner: partner.Partner_name,
+        Partner: 'partner',
+				// Partner_fields: partner?.Partner_fields ?? [],
         ScanID: '',
         Privacy: this.isChecked ? 'Yes' : 'No',
-        IdOferta: offer.IdOferta ? offer.IdOferta : '',
-        IdProducto: offer.Productos ? offer.Producto1[0].IdProducto : '',
+        // IdOferta: offer.IdOferta ? offer.IdOferta : '',
+        // IdProducto: offer.Productos ? offer.Producto1[0].IdProducto : '',
         Nombre: f.form.value.nameAndSurname ? f.form.value.nameAndSurname : ' ',
         Telefono: f.form.value.telephoneNumber,
         Legal_text: this.literalsPopUp.phoneCall.check + ' ' + this.literalsPopUp.phoneCall.text + ' política de privacidad',
         Asunto: 'Petición de llamada - ' + this.typeOfPage(),
-        lead: lead
+        // lead: lead
       };
       /* this.recaptchaV3Service
         .execute('createTokenAndNavigation')
@@ -117,7 +118,13 @@ export class PhonecallComponent implements OnInit {
       }); */
       load(environment.site_key_recaptcha).then((recaptcha) => {
         recaptcha.execute('createTokenAndNavigation').then((recaptchaToken) => {
-          this.infoJson.recaptcha = recaptchaToken;
+          
+          // this.infoJson['recaptcha'] = recaptchaToken;
+
+          if (this.infoJson) {
+            this.infoJson.recaptcha = recaptchaToken;
+          }
+          
           return this.sendInfo(this.infoJson);
         });
       });

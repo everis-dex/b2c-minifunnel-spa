@@ -1,4 +1,4 @@
-@if (!isPartner) {
+@if (isPartner) {
     <div class="header" id="header">
         <mat-toolbar>
             <div class="icons">
@@ -16,7 +16,11 @@
     <div class="header" id="header">
         <mat-toolbar>
             <div class="icons">
-                <div class="logo-container">
+                <div class="icons--logo-total">
+                    <img src="assets/icons/total_icon.png" alt="Total Energies logo"/>
+                </div>
+                <div class="separator"></div>
+                <div class="icons--logo-partner">
                     <img src="assets/icons/total_icon.png" alt="Total Energies logo"/>
                 </div>
             </div>
