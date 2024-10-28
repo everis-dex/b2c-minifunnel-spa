@@ -9,7 +9,7 @@ import { ButtonComponent } from '../../shared/button/button.component';
 @Component({
   selector: 'app-main-container',
   standalone: true,
-  imports: [StepCardComponent, ButtonComponent],
+  imports: [StepCardComponent],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.scss'
 })
@@ -59,6 +59,10 @@ export class MainContainerComponent {
 				});
 			}
 		);
+	}
+
+  checkbox(data: boolean) {
+    console.log(data);
 	}
 
 }
