@@ -1,0 +1,92 @@
+<app-pop-up-close (closeSelected)="closePopUp()">
+	<div class="pop-up-fields">
+		<img class="alterIco" src="assets/icons/telefono.svg">
+		<div class="title-blue">
+			<h1 class="title">{{ "popUps.contact-client.title" | translate }}</h1>
+		</div>
+		<p class="title-form">{{ "popUps.contact-client.text" | translate }}</p>
+	
+		<div class="contact-container">
+			<form #formPopUps="ngForm" (ngSubmit)="submit(formPopUps)">
+				<mat-form-field
+					[ngClass]="{
+			  'mat-invalid':
+				(formPopUp?.controls?.phone?.invalid || inputPhoneInitError) &&
+				(!formPopUp?.controls?.phone?.pristine || formPopUp?.submitted),
+			  'mat-valid': formPopUp?.controls?.phone?.valid && inputPhoneInitValid
+			}"
+				>
+					<img class="valid" [src]="srcValid" />
+					<img class="invalid" [src]="srcInvalid" />
+					<label>{{ "popUps.labelTlf" | translate }}</label>
+					<input
+						pattern="(^\+)?\d*"
+						type="text"
+						matInput
+						name="phone"
+						minlength="9"
+						maxlength="9"
+						[(ngModel)]="formdata.phone"
+						(ngModelChange)="ValidatePhoneNumber($event)"
+						required
+					/>
+					<mat-hint
+						class="error"
+						*ngIf="
+				formPopUp?.controls?.phone?.invalid &&
+				(!formPopUp?.controls?.phone?.pristine || formPopUp?.submitted) &&
+				!formPopUp?.controls?.phone?.value
+			  "
+					>
+						{{ "errors.required" | translate }}
+					</mat-hint>
+					<mat-hint
+						class="error"
+						*ngIf="
+				formPopUp?.controls?.phone?.invalid &&
+				!formPopUp?.controls?.phone?.pristine &&
+				formPopUp?.controls?.phone?.value
+			  "
+					>
+						{{ "errors.errorPhone" | translate }}
+					</mat-hint>
+					<mat-hint
+						class="error"
+						*ngIf="
+				inputPhoneInitError &&
+				!inputPhoneInitValid &&
+				!formPopUp?.controls?.phone?.invalid
+			  "
+					>
+						{{ "errors.errorPhoneInit" | translate }}
+					</mat-hint>
+				</mat-form-field>
+				<div class="conditions">
+					<mat-checkbox
+					  class="checkboxTerms"
+					  name="isChecked"
+					  [(ngModel)]="isChecked">
+					  {{'popUps.contact-client.check' |translate}}
+					</mat-checkbox>
+				  </div>
+				  <p class="privacy-policy">{{'popUps.contact-client.privacyText' | translate}} <a [href]="'https://www.totalenergies.es/es/hogares/politica-de-privacidad'" target="_blank">{{'popUps.phoneCall.privacyPolicy' | translate}}.</a></p>
+				<div class="button-container">
+					<app-button
+						buttonClass="next"
+						buttonText="{{ textButton | translate }}"
+						id="soy-cliente-button"
+						buttonType="submit"
+						[ngClass]="{ sending: isSending }"
+					></app-button>
+				</div>
+			</form>
+		</div>
+		<div class="captcha-text">
+			This site is protected by reCAPTCHA and the Google
+			<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+			and
+			<a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+			apply.
+		</div>
+	</div>
+</app-pop-up-close>

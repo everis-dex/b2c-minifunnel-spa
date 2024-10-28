@@ -1,0 +1,245 @@
+@import "../../../variables.scss";
+
+.pop-up-fields {
+  background-color: $color-white;
+  text-align: center;
+  margin-inline: 10px 10px;
+
+  & .mat-form-field {
+    display: block;
+  }
+}
+
+.pop-up-alert {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reSend {
+  color: red;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* .title-red {
+  color: #ed0000;
+  h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+} */
+
+/* .title-blue {
+  background: linear-gradient(95.5deg, #009CEA 2.38%, #4632FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+} */
+
+.icon {
+  margin-right: 10px;
+  margin-bottom: 16px;
+}
+
+/* .title {
+  font-size: 1.5em;
+  font-weight: 300;
+} */
+
+.button-container {
+  text-align: center;
+}
+
+.button-navigation-container {
+  margin: 1px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: $medium) {
+  .button-navigation-container {
+    margin: 1px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.button-doubts {
+  color: $color-white;
+  background-color: #ED0000;
+  border: 2px $buttoncolor solid;
+  border-radius: 30px;
+  min-height: 40px;
+  min-width: 140px;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0.6em;
+  text-align: center;
+  p{
+    margin: 0;
+  }
+}
+
+.button-white {
+  color: red;
+  background-color: white;
+}
+
+#popupModal {
+  .main-container {
+    max-width: 695px;
+
+  }
+
+  section {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .mat-form-field {
+    width: 100%;
+    label {
+      font-size: 13px;
+    }
+  }
+
+  .checkbox-container {
+    font-size: 13px;
+    color: #000;
+    margin-top: 1em;
+    text-align: left;
+  }
+  .text-container {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 12px;
+    color: $color-text-total;
+    a{
+      color: $color-text-total;
+      text-decoration: underline;
+    }
+  }
+  .button-container {
+    text-align: center;
+  }
+
+  .input{
+    .mat-form-field-infix {
+      padding: 0.4375em 0;
+      margin: 8px 0;
+    }
+    .input-label {
+      font-size: 13px;
+      position: absolute;
+      top: -4px;
+    }
+    .input-icon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: calc(50% + 5px);
+      left: unset;
+      right: 12px;
+      transform: translateY(-50%);
+      display: block;
+    }
+    .phone {
+      filter: invert(1);
+    }
+    .input-placeholder {
+      position: absolute;
+      top: calc(50% - 2px);
+      left: 8px;
+    }
+    .error {
+      position: absolute;
+    }
+  }
+  mat-form-field {
+    /* ::ng-deep.mat-form-field-underline {
+      display: none;
+    } */
+    .mat-input-element{
+      margin-top: 0.7em;
+      height: 2.3em;
+      border: 1px #5D6364 solid;
+      border-radius: 0.5em;
+      padding-left: 7px;
+      max-width: 99%;
+    }
+    &.mat-valid {
+      color: green;
+      ::ng-deep.mat-form-field-underline {
+        background-color: green;
+      }
+      .valid {
+        display: block !important;
+        top: -10px;
+        padding: 0;
+        position: absolute;
+      }
+      .invalid {
+        display: none !important;
+      }
+    }
+    &.mat-invalid {
+      ::ng-deep.mat-form-field-underline {
+        background-color: red;
+      }
+      .valid {
+        display: none !important;
+      }
+      .invalid {
+        padding: 0;
+        display: block !important;
+        top: -10px;
+        position: absolute;
+      }
+    }
+    img {
+      position: absolute;
+      right: 0.6em;
+      width: 1.5em;
+      top: 0.4em;
+      display: none;
+    }
+  }
+  .errorSms {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 3%; 
+    margin-top: 3%; 
+    text-align: center;
+  }
+
+
+
+  @media screen and (max-width: $medium) {
+    section {
+      text-align: center;
+      div {
+        padding: 0;
+      }
+      h1 {
+        font-size: 18px;
+      }
+      img {
+        display: none;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+    .checkbox-container {
+      font-size: 12px;
+    }
+  }
+}
