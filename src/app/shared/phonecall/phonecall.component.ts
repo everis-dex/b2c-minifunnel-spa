@@ -1,6 +1,6 @@
 import { ApicallsService } from './../../services/apicalls.service';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { PopupsService } from './../../services/popup.service';
 //import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { load } from 'recaptcha-v3-enterprise';
@@ -9,11 +9,17 @@ import { environment } from '../../../environments/environment';
 import { FormHelperService } from './../../services/form-helper.service';
 import * as literalsJson from './../../../assets/i18n/sp.json';
 import { TagManagerService } from './../../services/tagManager.service';
+import { CommonModule } from '@angular/common';
+import { ButtonComponent } from '../button/button.component';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-phonecall',
   templateUrl: './phonecall.component.html',
   styleUrls: ['./phonecall.component.scss'],
+  standalone: true,
+  imports: [CommonModule, FormsModule, MatFormFieldModule, TranslatePipe, ButtonComponent],
 })
 
 export class PhonecallComponent implements OnInit {

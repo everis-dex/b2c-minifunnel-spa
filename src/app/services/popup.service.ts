@@ -6,6 +6,7 @@ import { TagManagerService } from './tagManager.service';
 import { GenericModalComponent } from '../shared/pop-ups/generic/generic-modal.component';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Injectable } from '@angular/core';
+import { PhonecallComponent } from '../shared/phonecall/phonecall.component';
 
 
 @Injectable({
@@ -121,11 +122,11 @@ export class PopupsService {
     this.openGenericPopup("partner_nopublicado", {}, {});
   }
 
-  // openPhoneCallComponent(): void {
-  //   this.dialog.open(PhonecallComponent, {
-  //     panelClass: 'mat-dialog-phonecall',
-  //   });
-  // }
+  openPhoneCallComponent(): void {
+    this.dialog.open(PhonecallComponent, {
+      panelClass: 'mat-dialog-phonecall',
+    });
+  }
 
   openGenericPopup(modalType: string, popupData: any = {}, dataInfo: any, situation?: string, options?: any, disableClose = true) {
     const dialogRef = this.dialog.open(GenericModalComponent, {
